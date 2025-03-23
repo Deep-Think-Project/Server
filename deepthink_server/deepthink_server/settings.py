@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-h=bll_ex#0z%z$hgh-!^artl%v%m0@_^om!vrt!9v0gsa1862%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+BACKEND_ADDRESS = '172.20.10.12'
+FRONTEND_ADDRESS = '172.20.10.11'
+
+ALLOWED_HOSTS = ['localhost', BACKEND_ADDRESS, FRONTEND_ADDRESS, '*', 'https://850b-2001-2d8-218e-f3c3-1c41-48c4-d9b5-d8d7.ngrok-free.app']
 
 
 # Application definition
@@ -37,9 +40,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    'main_app',
+    
+    'rest_framework',
+    'corsheaders'
 ]
 
+
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware', #corsheaders
+    
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -121,3 +132,14 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# CORS_ALLOW_CREDENTIALS = True
+
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:8000",  # 개발 환경 (React, Vue 등)
+#     "http://172.20.10.12:8000",  # 개발 환경 (React, Vue 등)
+#     "http://172.20.10.11:3000",  # 운영 환경의 프론트엔드 URL
+#     'https://32e5-2001-e60-9097-aea-2dbe-344-21e9-3e59.ngrok-free.app'
+# ]
+CORS_ALLOW_ALL_ORIGINS = True
+
