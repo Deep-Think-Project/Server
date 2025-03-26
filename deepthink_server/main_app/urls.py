@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import TempClassView
+from .views import home_view
 
 urlpatterns = [
-    path('test/', TempClassView.as_view(), name='test'),
+    path('', home_view, name='home'),
 ]
