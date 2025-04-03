@@ -28,7 +28,7 @@ DEBUG = True
 BACKEND_ADDRESS = '172.20.10.12'
 FRONTEND_ADDRESS = '172.20.10.11'
 
-ALLOWED_HOSTS = ['localhost', BACKEND_ADDRESS, FRONTEND_ADDRESS, '*', 'https://850b-2001-2d8-218e-f3c3-1c41-48c4-d9b5-d8d7.ngrok-free.app']
+ALLOWED_HOSTS = ['localhost', BACKEND_ADDRESS, FRONTEND_ADDRESS, '*', 'https://b7b5-117-17-163-48.ngrok-free.app']
 
 
 # Application definition

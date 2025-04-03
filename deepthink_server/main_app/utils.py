@@ -96,11 +96,10 @@ def indexing_text(article, input_type):
     # 결과 출력
     # print(json_output)
 
-    output_path = os.path.join(settings.BASE_DIR, 'output', 'indexed', 'indexed_output.json')
     # 파일로 저장 (선택 사항)
-    with open(output_path, "w", encoding="utf-8") as f:
-        f.write(json_output)
-    
+    output_path = os.path.join(settings.BASE_DIR, 'output', '2-indexed')
+    save_unique_file(output_path, 'indexed_output.json', json_output)
+
     return json_output
 
 # text extraction from @hanwooo  
@@ -133,6 +132,10 @@ def new_extract_text(url):
         # 여러 줄 바꿈을 하나로 처리하고 불필요한 공백 제거
         text_without_line_breaks = ' '.join(text.split())
         
+        # 결과 파일 저장
+        output_path = os.path.join(settings.BASE_DIR, 'output', '1-raw')
+        save_unique_file(output_path, 'extracted_text.txt', text_without_line_breaks)
+        
         return text_without_line_breaks
     except requests.exceptions.RequestException as e:
         raise Exception(f"URL 요청 중 오류 발생: {e}")
@@ -159,7 +162,7 @@ def call_gpt_api(json_output):
         "content": [
             {
             "type": "input_text",
-            "text": "Classify each sentence in the input JSON as either a \"clear_sentence\" or \"ambiguous_sentence\" using provided criteria. For ambiguous sentences, provide a \"reason\" for ambiguity and possible \"other_interpretations.\" Sentences can be in Korean or English. If an input sentence is in Korean, both 'reason' and 'other_interpretations' must be written in Korean.\n\nFocus on the following criteria to determine sentence types:\n1. **Context Dependence**\n   - *Clear Sentence*: The meaning is definite without context.\n   - *Ambiguous Sentence*: Requires additional context for a clear interpretation.\n2. **Word Ambiguity**\n   - *Clear Sentence*: Word meanings are singular or clearly intended.\n   - *Ambiguous Sentence*: Words have multiple meanings lacking clear context.\n3. **Specificity**\n   - *Clear Sentence*: Explicit details reduce ambiguity.\n   - *Ambiguous Sentence*: Vague details lead to multiple interpretations.\n4. **Sentence Structure**\n   - *Clear Sentence*: Simple grammar with clear subject-verb relationships.\n   - *Ambiguous Sentence*: Complex structures causing variance in interpretation.\n5. **Plausibility of Common Interpretations**\n   - *Clear Sentence*: One likely scenario.\n   - *Ambiguous Sentence*: Several plausible scenarios exist.\n\n# Steps\n\n1. Analyze each sentence according to the above criteria.\n2. Classify sentences as \"clear_sentence\" or \"ambiguous_sentence.\"\n3. For \"ambiguous_sentence,\" include:\n   - `reason`: Why the sentence is classified as such.\n   - `other_interpretations`: Possible different meanings.\n   - Ensure both are in Korean if the original sentence is in Korean.\n4. Count the total of each type for the summary.\n\n# Output Format\n\nGenerate a JSON object with two main components:\n- A list of sentence objects, each containing:\n  - `index`: Sentence's index in input.\n  - `sentence`: Original sentence.\n  - `type`: \"clear_sentence\" or \"ambiguous_sentence.\"\n  - **For ambiguous_sentence only:**\n    - `reason`: Explanation for ambiguity (in Korean if the sentence was in Korean).\n    - `other_interpretations`: List of alternate meanings (in Korean if the sentence was in Korean).\n- A summary object containing:\n  - `clear_sentence`: Total number of clear sentences.\n  - `ambiguous_sentence`: Total number of ambiguous sentences.\n\n```json\n{\n  \"sentences\": [\n    {\n      \"index\": 0,\n      \"sentence\": \"[input sentence]\",\n      \"type\": \"[one of: clear_sentence, ambiguous_sentence]\",\n      \"reason\": \"[only if ambiguous]\",\n      \"other_interpretations\": [\"alternate meaning 1\", \"alternate meaning 2\"]\n    },\n    ...\n  ],\n \n  \"summary\": {\n    \"clear_sentence\": [count],\n    \"ambiguous_sentence\": [count]\n  }\n}\n```\n\n# Examples\n\n**Example Start**\n\n**Input JSON:**\n```json\n{\n \"0\": \"나는 매일 아침 7시에 일어난다.\",\n \"1\": \"그는 빛을 보았다.\"\n}\n```\n\n**Output JSON:**\n```json\n{\n  \"sentences\": [\n    {\n      \"index\": 0,\n      \"sentence\": \"나는 매일 아침 7시에 일어난다.\",\n      \"type\": \"clear_sentence\"\n    },\n    {\n      \"index\": 1,\n      \"sentence\": \"그는 빛을 보았다.\",\n      \"type\": \"ambiguous_sentence\",\n      \"reason\": \"단어 '빛'은 빛 또는 통찰력으로 해석될 수 있습니다.\",\n      \"other_interpretations\": [\"그는 빛을 보았다.\", \"그는 통찰력을 얻었다.\"]\n    }\n  ],\n  \"summary\": {\n    \"clear_sentence\": 1,\n    \"ambiguous_sentence\": 1\n  }\n}\n```\n\n**Example End**\n\n# Notes\n\n- Assume inputs follow the specified JSON format.\n- Output JSON must strictly follow the outlined structure.\n- Handle edge cases using criteria for consistent decisions."
+            "text": "Analyze each sentence according to the provided criteria to classify sentences as \"clear_sentence\" or \"ambiguous_sentence.\" Summarize the input text and determine the author's intent. If the input sentence is in Korean, provide both in Korean.\n\n# Sentence Judgment Rules\n\n## clear_sentence:\n- Based on verifiable evidence.\n- Free from emotional, figurative, or ambiguous language.\n- Logically sound and contextually appropriate.\n- Distinguishes clearly between facts and opinions.\n\n→ If a sentence meets all the above criteria, classify it as `clear_sentence`.\n\n## ambiguous_sentence:\nClassify as `ambiguous_sentence` if any of the following are detected:\n\n- Hidden motives or socio-political bias.\n- Metaphor, implication, or vague expressions.\n- Exaggeration or understatement.\n- Mixing facts with subjective opinions.\n- Emotional tone or ideological slant.\n- Omissions or selective presentations.\n- Multiple interpretations or logical fallacies.\n- Context mismatch or inconsistency.\n\n→ For `ambiguous_sentence`, include:\n- `\"reason\"`: Explain why it's classified this way, using a variety of creative, non-repetitive expressions, focusing on **Sentence Judgment Rules**.\n- `\"other_interpretations\"`: Suggest in Korean how this could be differently interpreted based on ideological perspective, interests, or contextual criticism, inducing critical thinking.\n\n→ Remove sentences that are not part of the news body text, such as those containing \"(사진=AP, ~~ 뉴스).\"\n\n# Steps\n\n1. Analyze each sentence using the criteria above.\n2. Classify sentences as \"clear_sentence\" or \"ambiguous_sentence.\"\n3. For \"ambiguous_sentence,\" provide reasons and other interpretations, ensuring Korean translations if applicable.\n4. Count the total of each type.\n5. Summarize the entire input text in 4-5 lines, focusing on core keywords.\n6. Analyze the author's intent, distinguishing between the main and subarguments. Ensure Korean translations if applicable.\n7. Remove sentences not considered as part of the news body if they match specific patterns like \"(사진=AP, ~~ 뉴스).\"\n\n# Output Format\n\nGenerate a JSON object with:\n\n- A list of sentence objects with `index`, `sentence`, `type`, and for ambiguous sentences, additional `reason` and `other_interpretations`.\n- A results object with totals, a summary, and author's intent.\n\n# Examples\n\n**Example Start**\n\n**Input JSON:**\n```json\n{\n \"0\": \"나는 매일 아침 7시에 일어난다.\",\n \"1\": \"그는 빛을 보았다.\",\n \"2\": \"이 정책은 경제 성장에 기여할 것이다.\"\n}\n```\n\n**Output JSON:**\n```json\n{\n  \"sentences\": [\n    {\n      \"index\": 0,\n      \"sentence\": \"나는 매일 아침 7시에 일어난다.\",\n      \"type\": \"clear_sentence\"\n    },\n    {\n      \"index\": 1,\n      \"sentence\": \"그는 빛을 보았다.\",\n      \"type\": \"ambiguous_sentence\",\n      \"reason\": \"단어 '빛'은 빛 또는 통찰력으로 해석될 수 있습니다.\",\n      \"other_interpretations\": [\"빛을 실제로 보았다\", \"통찰력을 얻었다\"]\n    },\n    {\n      \"index\": 2,\n      \"sentence\": \"이 정책은 경제 성장에 기여할 것이다.\",\n      \"type\": \"ambiguous_sentence\",\n      \"reason\": \"정책의 구체적인 내용이 명확하지 않아 다양한 해석이 가능합니다.\",\n      \"other_interpretations\": [\"경제 성장에 기여하지 않을 수 있음\"]\n    }\n  ],\n  \"results\": {\n    \"clear_sentence\": 1,\n    \"ambiguous_sentence\": 2,\n    \"summary\": \"텍스트는 일상적인 아침 루틴, 통찰의 가능성이 있는 시각적 경험, 그리고 경제 성장에 영향을 미칠 정책을 논의합니다.\",\n    \"author_intent\": \"저자는 일상을 설명하고, 경험을 전달하며, 경제적 함의를 제시하려고 합니다.\"\n  }\n}\n```\n\n**Example End**\n\n# Notes\n\n- Assume JSON formatted inputs.\n- Follow the output JSON structure exactly."
             }
         ]
         },
@@ -188,11 +191,40 @@ def call_gpt_api(json_output):
 
     # print(response.output_text)
     
-    output_path = os.path.join(settings.BASE_DIR, 'output', 'final_output', 'final_output.json')
-    with open(output_path, 'w', encoding='utf-8') as f:
-        f.write(response.output_text)
+    # save file
+    output_path = os.path.join(settings.BASE_DIR, 'output', '3-final_output')
+    save_unique_file(output_path, 'final_output.json', response.output_text)
     
     json_obj = json.loads(response.output_text)
     
     return json_obj
-        
+
+def save_unique_file(directory: str, base_filename: str, content: str) -> str:
+    """
+    주어진 디렉토리에 중복되지 않는 파일명을 생성하여 저장한다.
+    예: base_filename='hello.txt' -> hello.txt, hello1.txt, hello2.txt ...
+
+    Parameters:
+        directory (str): 파일을 저장할 디렉토리 경로
+        base_filename (str): 기본 파일 이름 (예: 'hello.txt')
+        content (str): 파일에 저장할 내용. 기본값은 "Hello, World!"
+
+    Returns:
+        str: 생성된 파일의 전체 경로
+    """
+
+    base_name, ext = os.path.splitext(base_filename)
+    count = 0
+
+    while True:
+        if count == 0:
+            filename = base_filename
+        else:
+            filename = f"{base_name}{count}{ext}"
+        filepath = os.path.join(directory, filename)
+        if not os.path.exists(filepath):
+            with open(filepath, "w", encoding="utf-8") as f:
+                f.write(content)
+            return filepath
+        count += 1
+
