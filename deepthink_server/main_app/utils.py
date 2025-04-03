@@ -20,6 +20,15 @@ def input_type_check(input):
         str: "URL" 또는 "Plain Text"
     """
     
+    # 이미지 및 기타 리소스 확장자 예외 리스트
+    excluded_extensions = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.webp', '.svg']
+
+    # 문자열 끝이 해당 확장자로 끝나는 경우 예외 처리
+    lower_input = input.strip().lower()
+    for ext in excluded_extensions:
+        if lower_input.endswith(ext):
+            raise Exception("URL이 이미지 또는 기타 리소스 파일로 끝납니다. URL을 확인해 주세요.")
+    
     # URL 패턴 정규표현식 (IP 기반 URL 포함, TLD 필수)
     url_pattern = re.compile(
         r'^(https?:\/\/)?'  # http:// 또는 https:// (선택적)

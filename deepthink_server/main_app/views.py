@@ -22,10 +22,15 @@ def home_view(request):
         request_data = request.data
         
         input_text = request_data.get('input')
-        input_type = input_type_check(request_data.get('input')) # Use input_type_check function to check the input type
+        
+        try:
+            input_type = input_type_check(request_data.get('input')) # Use input_type_check function to check the input type
 
-        # print(f'input type: {input_type}') # Debugging
-
+            # print(f'input type: {input_type}') # Debugging
+        except Exception as e:
+            return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        
+        
         if input_type == 'url':
             extracted_text = new_extract_text(request_data.get('input')) # url 에서 text 추출
             # print(f'extracted text: {extracted_text}')
