@@ -1,0 +1,112 @@
+{
+  "ambiguous_sentences": [
+    {
+      "index": 1,
+      "sentence": "“과거 인공지능(AI) 인재가 단편적인 도구 공부에 그쳤다면 지금은 AI를 활용해 실제 문제를 해결할 수 있어야 합니다.",
+      "type": "ambiguous_sentence",
+      "reason": "현재와 과거를 비교하는 표현이 주관적입니다.",
+      "other_interpretations": [
+        "AI 기술이 항상 문제 해결에 집중되어 있었을 수도 있음"
+      ]
+    },
+    {
+      "index": 2,
+      "sentence": "'소프트웨어(SW) 마에스트로'의 교육 프로그램이 이에 부합합니다.",
+      "type": "ambiguous_sentence",
+      "reason": "주장의 구체적인 근거가 부족합니다.",
+      "other_interpretations": [
+        "프로그램이 다른 기준에 부합할 수도 있음"
+      ]
+    },
+    {
+      "index": 4,
+      "sentence": "SW 마에스트로 1기 수료생인 그는 “프로젝트 기반 교육으로 실제 문제를 푸는 만큼 큰 성장이 이뤄진다”고 말했다.",
+      "type": "ambiguous_sentence",
+      "reason": "발언자의 주관적 의견이 포함되어 있습니다.",
+      "other_interpretations": [
+        "모든 수료생이 동일한 성장을 이룰지는 불확실함"
+      ]
+    },
+    {
+      "index": 5,
+      "sentence": "교육 효과가 지대하다는 것이다.",
+      "type": "ambiguous_sentence",
+      "reason": "구체적인 예시나 데이터가 없어 주장을 확증하기 어렵습니다.",
+      "other_interpretations": [
+        "교육 효과는 과장되었을 수 있음"
+      ]
+    },
+    {
+      "index": 12,
+      "sentence": "다른 수료생, 멘토 등도 SW 마에스트로에 호평 일색이었다.",
+      "type": "ambiguous_sentence",
+      "reason": "모든 사람들이 긍정적인 반응을 보였다는 주장은 주관적입니다.",
+      "other_interpretations": [
+        "일부는 비판적일 수도 있음"
+      ]
+    },
+    {
+      "index": 13,
+      "sentence": "특히 프로그램 중 자율적인 문제 정의, 기획 과정이 뜻깊었다고 입을 모았다.",
+      "type": "ambiguous_sentence",
+      "reason": "참여자들 간의 의견을 일반화하고 있습니다.",
+      "other_interpretations": [
+        "모든 참가자가 동의하지 않았을 수도 있음"
+      ]
+    },
+    {
+      "index": 14,
+      "sentence": "네이버에 입사한 김지수 개발자(11기 수료)는 “문제가 주어지는 것이 아니라, 스스로 정의하고 기획해 문제를 해결하는 것이 SW 마에스트로 프로그램”이라며 “이는 커리어를 쌓을수록 더 빛을 발할 것”이라고 기대했다.",
+      "type": "ambiguous_sentence",
+      "reason": "미래에 대한 주관적 기대가 포함되어 있습니다.",
+      "other_interpretations": [
+        "기대와 실제 효과는 차이가 있을 수 있음"
+      ]
+    },
+    {
+      "index": 15,
+      "sentence": "SW 마에스트로 프로그램이 기술 동향에 선제 대응한다는 평가도 있었다.",
+      "type": "ambiguous_sentence",
+      "reason": "‘선제 대응’이라는 평가는 주관적입니다.",
+      "other_interpretations": [
+        "기술 변화에 대한 대응이 충분하지 않을 수도 있음"
+      ]
+    },
+    {
+      "index": 18,
+      "sentence": "간담회에 참석한 강도현 과기정통부 차관은 “SW 마에스트로 수료생의 좋은 소식을 들으면 뿌듯한 마음”이라며 지속적인 지원을 약속했다.",
+      "type": "ambiguous_sentence",
+      "reason": "감정 표현과 약속이 주관적입니다.",
+      "other_interpretations": [
+        "지원이 항상 이어지지 않을 수도 있음"
+      ]
+    },
+    {
+      "index": 19,
+      "sentence": "홍진배 IITP 원장은 “AI 대전환(AX) 시기에는 최고급 SW 인재 확보가 매우 중요하다”며 “SW마에스트로가 그 마중물 역할을 하고 있다”고 강조했다.",
+      "type": "ambiguous_sentence",
+      "reason": "비유적 표현과 강조가 포함되어 있습니다.",
+      "other_interpretations": [
+        "다른 프로그램들이 더 중요한 역할을 할 수도 있음"
+      ]
+    },
+    {
+      "index": 25,
+      "sentence": "강 차관은 환영사에서 “산업계 최고 멘토, 잠재력 가진 멘티를 모으면 시너지가 날 것이라는 생각으로 SW 마에스트로가 이뤄졌다”며 “앞으로 마포 연수센터에서 세계를 무대로 활약하는 개발자가 등장하기를 기대하며, 정부도 지원을 아끼지 않을 것”이라고 밝혔다.",
+      "type": "ambiguous_sentence",
+      "reason": "비유적 표현과 감정적 기대가 포함되어 있습니다.",
+      "other_interpretations": [
+        "정부의 지원이 줄어들 수 있음"
+      ]
+    },
+    {
+      "index": 26,
+      "sentence": "홍 원장은 “새 연수센터는 AI·SW 핵심 인재 양성의 중요 거점으로, 창업·혁신 중심지인 마포 지역 인프라를 적극 활용해 기술창업 생태계를 강화하는 초석이 될 것”이라며 “SW 마에스트로가 우리나라 AI·SW 산업 미래를 밝히도록 IITP가 응원하고 지원하겠다”고 전했다.",
+      "type": "ambiguous_sentence",
+      "reason": "미래에 대한 비전과 강력한 의지가 포함되어 있습니다.",
+      "other_interpretations": [
+        "이러한 비전이 실현되지 않을 수 있음"
+      ]
+    }
+  ]
+}

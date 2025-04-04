@@ -1,0 +1,22 @@
+{
+  "ambiguous_sentences": [
+    {
+      "index": 5,
+      "sentence": "자동차는 한국의 대미 수출 품목 1위여서 국내 업계에 타격이 예상되고 있다.",
+      "type": "ambiguous_sentence",
+      "reason": "관세가 국내 업계에 미칠 영향을 추측하는 부분이 포함되어 있습니다.",
+      "other_interpretations": [
+        "관세 영향이 실제로 작을 수도 있음"
+      ]
+    },
+    {
+      "index": 8,
+      "sentence": "현대차그룹은 미국 내 생산을 늘려 관세 폭탄 충격을 완화할 것으로 전망된다.",
+      "type": "ambiguous_sentence",
+      "reason": "미래의 가능성에 대해 추측하는 부분이 포함되어 있습니다.",
+      "other_interpretations": [
+        "생산 증대가 관세 충격을 완화하지 않을 수도 있음"
+      ]
+    }
+  ]
+}

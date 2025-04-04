@@ -100,7 +100,7 @@ def indexing_text(article, input_type):
     indexed_sentences = {str(i): sentence for i, sentence in enumerate(sentences)}
 
     # JSON 문자열로 변환 (pretty print)
-    json_output = json.dumps(indexed_sentences, ensure_ascii=False, indent=4)
+    json_output = json.dumps(indexed_sentences, ensure_ascii=False, indent=4) # python dict -> json str
 
     # 결과 출력
     # print(json_output)
@@ -171,7 +171,7 @@ def call_gpt_api(json_output):
         "content": [
             {
             "type": "input_text",
-            "text": "Analyze each sentence according to the provided criteria to classify sentences as \"clear_sentence\" or \"ambiguous_sentence.\" Summarize the input text and determine the author's intent. If the input sentence is in Korean, provide both in Korean.\n\n# Sentence Judgment Rules\n\n## clear_sentence:\n- Based on verifiable evidence.\n- Free from emotional, figurative, or ambiguous language.\n- Logically sound and contextually appropriate.\n- Distinguishes clearly between facts and opinions.\n\n→ If a sentence meets all the above criteria, classify it as `clear_sentence`.\n\n## ambiguous_sentence:\nClassify as `ambiguous_sentence` if any of the following are detected:\n\n- Hidden motives or socio-political bias.\n- Metaphor, implication, or vague expressions.\n- Exaggeration or understatement.\n- Mixing facts with subjective opinions.\n- Emotional tone or ideological slant.\n- Omissions or selective presentations.\n- Multiple interpretations or logical fallacies.\n- Context mismatch or inconsistency.\n\n→ For `ambiguous_sentence`, include:\n- `\"reason\"`: Explain why it's classified this way, using a variety of creative, non-repetitive expressions, focusing on **Sentence Judgment Rules**.\n- `\"other_interpretations\"`: Suggest in Korean how this could be differently interpreted based on ideological perspective, interests, or contextual criticism, inducing critical thinking.\n\n→ Remove sentences that are not part of the news body text, such as those containing \"(사진=AP, ~~ 뉴스).\"\n\n# Steps\n\n1. Analyze each sentence using the criteria above.\n2. Classify sentences as \"clear_sentence\" or \"ambiguous_sentence.\"\n3. For \"ambiguous_sentence,\" provide reasons and other interpretations, ensuring Korean translations if applicable.\n4. Count the total of each type.\n5. Summarize the entire input text in 4-5 lines, focusing on core keywords.\n6. Analyze the author's intent, distinguishing between the main and subarguments. Ensure Korean translations if applicable.\n7. Remove sentences not considered as part of the news body if they match specific patterns like \"(사진=AP, ~~ 뉴스).\"\n\n# Output Format\n\nGenerate a JSON object with:\n\n- A list of sentence objects with `index`, `sentence`, `type`, and for ambiguous sentences, additional `reason` and `other_interpretations`.\n- A results object with totals, a summary, and author's intent.\n\n# Examples\n\n**Example Start**\n\n**Input JSON:**\n```json\n{\n \"0\": \"나는 매일 아침 7시에 일어난다.\",\n \"1\": \"그는 빛을 보았다.\",\n \"2\": \"이 정책은 경제 성장에 기여할 것이다.\"\n}\n```\n\n**Output JSON:**\n```json\n{\n  \"sentences\": [\n    {\n      \"index\": 0,\n      \"sentence\": \"나는 매일 아침 7시에 일어난다.\",\n      \"type\": \"clear_sentence\"\n    },\n    {\n      \"index\": 1,\n      \"sentence\": \"그는 빛을 보았다.\",\n      \"type\": \"ambiguous_sentence\",\n      \"reason\": \"단어 '빛'은 빛 또는 통찰력으로 해석될 수 있습니다.\",\n      \"other_interpretations\": [\"빛을 실제로 보았다\", \"통찰력을 얻었다\"]\n    },\n    {\n      \"index\": 2,\n      \"sentence\": \"이 정책은 경제 성장에 기여할 것이다.\",\n      \"type\": \"ambiguous_sentence\",\n      \"reason\": \"정책의 구체적인 내용이 명확하지 않아 다양한 해석이 가능합니다.\",\n      \"other_interpretations\": [\"경제 성장에 기여하지 않을 수 있음\"]\n    }\n  ],\n  \"results\": {\n    \"clear_sentence\": 1,\n    \"ambiguous_sentence\": 2,\n    \"summary\": \"텍스트는 일상적인 아침 루틴, 통찰의 가능성이 있는 시각적 경험, 그리고 경제 성장에 영향을 미칠 정책을 논의합니다.\",\n    \"author_intent\": \"저자는 일상을 설명하고, 경험을 전달하며, 경제적 함의를 제시하려고 합니다.\"\n  }\n}\n```\n\n**Example End**\n\n# Notes\n\n- Assume JSON formatted inputs.\n- Follow the output JSON structure exactly."
+            "text": "Analyze each sentence according to the provided criteria to classify sentences as \"clear_sentence\" or \"ambiguous_sentence.\" Summarize the input text and determine the author's intent. If the input sentence is in Korean, provide both in Korean.\n\n# Sentence Judgment Rules\n\n## clear_sentence:\n- Based on verifiable evidence.\n- Free from emotional, figurative, or ambiguous language.\n- Logically sound and contextually appropriate.\n- Distinguishes clearly between facts and opinions.\n\n→ If a sentence meets all the above criteria, classify it as `clear_sentence`.\n\n→ For `clear_sentence`, include:\n- `\"reason\"`: Explain why it's classified as clear, referencing the criteria met.\n\n## ambiguous_sentence:\nClassify as `ambiguous_sentence` if any of the following are detected:\n\n- Hidden motives or socio-political bias.\n- Metaphor, implication, or vague expressions.\n- Exaggeration or understatement.\n- Mixing facts with subjective opinions.\n- Emotional tone or ideological slant.\n- Omissions or selective presentations.\n- Multiple interpretations or logical fallacies.\n- Context mismatch or inconsistency.\n\n→ For `ambiguous_sentence`, include:\n- `\"reason\"`: Explain why it's classified this way, using a variety of creative, non-repetitive expressions, focusing on **Sentence Judgment Rules**.\n- `\"other_interpretations\"`: Suggest in Korean how this could be differently interpreted based on ideological perspective, interests, or contextual criticism, inducing critical thinking.\n\n→ Remove sentences that are not part of the news body text, such as those containing \"(사진=AP, ~~ 뉴스).\"\n\n# Steps\n\n1. Analyze each sentence using the criteria above.\n2. Classify sentences as \"clear_sentence\" or \"ambiguous_sentence.\"\n3. For \"clear_sentence,\" provide reasons for its clarity.\n4. For \"ambiguous_sentence,\" provide reasons and other interpretations, ensuring Korean translations if applicable.\n5. Count the total of each type.\n6. Summarize the entire input text in 4-5 lines, focusing on core keywords.\n7. Analyze the author's intent, distinguishing between the main and subarguments. Ensure Korean translations if applicable.\n8. Remove sentences not considered as part of the news body if they match specific patterns like \"(사진=AP, ~~ 뉴스).\"\n\n# Output Format\n\nGenerate a JSON object with:\n\n- A list of sentence objects with `index`, `sentence`, `type`, and for ambiguous sentences, additional `reason` and `other_interpretations`.\n- A results object with totals, a summary as a bulleted list, and author's intent as a bulleted list.\n\n# Examples\n\n**Example Start**\n\n**Input JSON:**\n```json\n{\n \"0\": \"나는 매일 아침 7시에 일어난다.\",\n \"1\": \"그는 빛을 보았다.\",\n \"2\": \"이 정책은 경제 성장에 기여할 것이다.\"\n}\n```\n\n**Output JSON:**\n```json\n{\n  \"sentences\": [\n    {\n      \"index\": 0,\n      \"sentence\": \"나는 매일 아침 7시에 일어난다.\",\n      \"type\": \"clear_sentence\",\n      \"reason\": \"문장은 확인 가능한 사실에 근거하고 있으며, 모호한 언어가 없습니다.\"\n    },\n    {\n      \"index\": 1,\n      \"sentence\": \"그는 빛을 보았다.\",\n      \"type\": \"ambiguous_sentence\",\n      \"reason\": \"단어 '빛'은 빛 또는 통찰력으로 해석될 수 있습니다.\",\n      \"other_interpretations\": [\"빛을 실제로 보았다\", \"통찰력을 얻었다\"]\n    },\n    {\n      \"index\": 2,\n      \"sentence\": \"이 정책은 경제 성장에 기여할 것이다.\",\n      \"type\": \"ambiguous_sentence\",\n      \"reason\": \"정책의 구체적인 내용이 명확하지 않아 다양한 해석이 가능합니다.\",\n      \"other_interpretations\": [\"경제 성장에 기여하지 않을 수 있음\"]\n    }\n  ],\n  \"results\": {\n    \"clear_sentence\": 1,\n    \"ambiguous_sentence\": 2,\n    \"summary\": [\n      \"텍스트는 일상적인 아침 루틴을 설명합니다.\",\n      \"통찰의 가능성이 있는 시각적 경험을 전달합니다.\",\n      \"경제 성장에 영향을 미칠 정책을 논의합니다.\"\n    ],\n    \"author_intent\": [\n      \"저자는 일상을 설명하고, 경험을 전달하며, 경제적 함의를 제시하려고 합니다.\",\n      \"...\",\n    ]\n  }\n}\n```\n\n**Example End**\n\n# Notes\n\n- Assume JSON formatted inputs.\n- Follow the output JSON structure exactly."
             }
         ]
         },
@@ -193,7 +193,7 @@ def call_gpt_api(json_output):
     reasoning={},
     tools=[],
     temperature=1,
-    max_output_tokens=5000,
+    max_output_tokens=8000,
     top_p=1,
     store=True
     )
@@ -201,12 +201,14 @@ def call_gpt_api(json_output):
     # print(response.output_text)
     
     # save file
-    output_path = os.path.join(settings.BASE_DIR, 'output', '3-final_output')
-    save_unique_file(output_path, 'final_output.json', response.output_text)
+    output_path = os.path.join(settings.BASE_DIR, 'output', '3-first_gpt_output')
+    save_unique_file(output_path, 'first_gpt_output.json', response.output_text)
     
-    json_obj = json.loads(response.output_text)
+    json_obj = json.loads(response.output_text) # str -> json
     
-    return json_obj
+    print("[COMPLETE] GPT API")
+    
+    return json_obj # json
 
 def save_unique_file(directory: str, base_filename: str, content: str) -> str:
     """
@@ -221,6 +223,8 @@ def save_unique_file(directory: str, base_filename: str, content: str) -> str:
     Returns:
         str: 생성된 파일의 전체 경로
     """
+    
+    # print(type(content))
 
     base_name, ext = os.path.splitext(base_filename)
     count = 0
@@ -237,3 +241,132 @@ def save_unique_file(directory: str, base_filename: str, content: str) -> str:
             return filepath
         count += 1
 
+def extract_ambiguous_sentences(json_data):
+    """
+    주어진 JSON 데이터에서 type이 'ambiguous_sentence'인 문장만 모아 새로운 JSON 형식으로 반환합니다.
+    
+    Args:
+        data (dict): 원본 JSON 데이터
+    
+    Returns:
+        dict: ambiguous_sentence만 포함된 새로운 JSON
+    """
+    ambiguous_sentences = [
+        sentence for sentence in json_data.get("sentences", [])
+        if sentence.get("type") == "ambiguous_sentence"
+    ]
+
+    result = {
+        "ambiguous_sentences": ambiguous_sentences,
+        # "count": len(ambiguous_sentences)
+    }
+    
+    json_to_str = json.dumps(result, ensure_ascii=False, indent=2) # python dict -> json str
+    
+    output_path = os.path.join(settings.BASE_DIR, 'output', '4-for_sonar')
+    save_unique_file(output_path, 'for_sonar.json', json_to_str)
+
+    return result # python dict
+
+from typing import Dict, Any, List
+
+def merge_gpt_sonar(gpt_json: Dict[str, Any], sonar_json: List[Dict[str, Any]]) -> Dict[str, Any]:
+    # sonar_json을 index 기준으로 빠르게 참조할 수 있도록 dict로 변환
+    sonar_dict = {item["index"]: item["results"] for item in sonar_json}
+
+    for sentence in gpt_json["sentences"]:
+        idx = sentence["index"]
+        # sonar_json에 해당 index가 있으면 references 추가
+        if idx in sonar_dict:
+            sentence["references"] = sonar_dict[idx]
+        else:
+            sentence["references"] = []  # 없으면 빈 리스트
+
+    output_path = os.path.join(settings.BASE_DIR, 'output', '6-merge_gpt_sonar')
+    save_unique_file(output_path, 'merged_output.json', json.dumps(gpt_json, ensure_ascii=False, indent=2))
+    
+    return gpt_json
+
+def call_sonar_api(python_dict):
+    YOUR_API_KEY = os.getenv("SONAR_API_KEY")
+
+    system_prompt = """
+    You are a professional research agent that assists in identifying real-world sources that support alternative interpretations of sentences. You will always be provided with input in JSON format containing a key called "ambiguous_sentences", which is a list of objects. Each object includes:
+
+    - "index": an integer identifier
+    - "sentence": the original sentence
+    - "type": always "ambiguous_sentence"
+    - "reason": a short explanation for why the sentence is considered ambiguous
+    - "other_interpretations": a list of possible alternative interpretations of the sentence
+
+    Your task is to find one or more relevant and credible sources (such as news articles, blogs, press releases, or interviews) for **each ambiguous sentence**, specifically related to the listed "other_interpretations".
+
+    For each sentence:
+    1. Go through all listed `other_interpretations`.
+    2. For each interpretation, search for a real-world source that reflects or supports that interpretation.
+    3. Return the results in the following strict format:
+
+    [
+    {
+        "index": <same index as in the input>,
+        "results": [
+        {
+            "source_title": "<title of the article/blog/etc.>",
+            "url": "<link to the source>"
+        },
+        ...
+        ]
+    },
+    ...
+    ]
+
+    * Do not include ```JSON ``` or any other code block formatting.
+    """
+
+    user_prompt_str = json.dumps(python_dict, ensure_ascii=False, indent=2) # python dict -> json str
+
+    messages = [
+        {
+            "role": "system",
+            "content": (
+                system_prompt
+                
+            ),
+        },
+        {
+            "role": "user",
+            "content": user_prompt_str
+        },
+    ]
+
+
+    client = OpenAI(api_key=YOUR_API_KEY, base_url="https://api.perplexity.ai")
+
+    # chat completion without streaming
+    response = client.chat.completions.create(
+        model="sonar-pro",
+        messages=messages,
+    )
+    # print(response)
+
+    content = response.choices[0].message.content
+    final_output = json.loads(content) # str -> json
+    
+    
+    output_file_path = os.path.join(settings.BASE_DIR, 'output', '5-sonar_output')
+    save_unique_file(output_file_path, 'sonar_output.json', content)
+
+    print("[COMPLETE] SONAR API")
+
+    return final_output # json
+
+# utils.py
+
+import time
+
+def timer_thread(start_time, stop_event):
+    elapsed = 0
+    while not stop_event.is_set():
+        time.sleep(1)
+        elapsed += 1
+        print(f"[TIMER] {elapsed}초 경과")

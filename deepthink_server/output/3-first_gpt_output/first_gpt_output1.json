@@ -3,169 +3,192 @@
     {
       "index": 0,
       "sentence": "과기정통부와 IITP는 3일 SW 마에스트로 마포 연수센터에서 수료생 간담회를 개최했다.",
-      "type": "clear_sentence"
+      "type": "clear_sentence",
+      "reason": "문장이 확인 가능한 사실에 근거하고 있으며, 명확합니다."
     },
     {
       "index": 1,
       "sentence": "“과거 인공지능(AI) 인재가 단편적인 도구 공부에 그쳤다면 지금은 AI를 활용해 실제 문제를 해결할 수 있어야 합니다.",
       "type": "ambiguous_sentence",
-      "reason": "이전과 현재의 AI 인재의 능력을 비교하는 표현이 기대로 해석될 수 있으며 구체적인 근거가 부족합니다.",
-      "other_interpretations": ["AI 인재가 도구 공부에 머물렀다는 비판", "실제 문제 해결에만 초점"]
+      "reason": "과거와 현재 AI 교육을 비교하는 주관적 의견이 포함되어 있습니다.",
+      "other_interpretations": ["AI 교육이 기본적인 원리 학습에 집중한다", "AI 활용 능력이 중요시된다"]
     },
     {
       "index": 2,
       "sentence": "'소프트웨어(SW) 마에스트로'의 교육 프로그램이 이에 부합합니다.",
       "type": "ambiguous_sentence",
-      "reason": "교육 프로그램의 효과에 대한 주장이 명확하게 뒷받침되지 않았습니다.",
-      "other_interpretations": ["SW 마에스트로가 모든 문제 해결에 부합", "일부 문제에 효과적이지 않을 수 있음"]
+      "reason": "어떤 면에서 부합하는지 구체적으로 설명이 부족하여, 다양한 해석이 가능합니다.",
+      "other_interpretations": ["문제 해결 능력 개발에 중점을 둔다는 의미", "기존 도구 학습에 머무르지 않는다는 의미"]
     },
     {
       "index": 3,
       "sentence": "” 김수인 엘리스 공동 창업자가 3일 SW 마에스트로 마포 연수센터에서 열린 수료생 간담회에서 한 말이다.",
-      "type": "clear_sentence"
+      "type": "clear_sentence",
+      "reason": "구체적 인용구의 출처가 명확히 제시되어 있습니다."
     },
     {
       "index": 4,
       "sentence": "SW 마에스트로 1기 수료생인 그는 “프로젝트 기반 교육으로 실제 문제를 푸는 만큼 큰 성장이 이뤄진다”고 말했다.",
       "type": "ambiguous_sentence",
-      "reason": "성장에 대한 주관적인 평가가 포함되어 있습니다.",
-      "other_interpretations": ["프로젝트 기반 교육이 항상 효과적이지 않을 수 있음", "성장에 큰 기여"]
+      "reason": "발언에 주관적 평가가 포함되어 있어 다양한 해석이 가능합니다.",
+      "other_interpretations": ["프로젝트 기반 교육의 효과를 강조", "문제 해결력을 높이는 데 중점을 둠"]
     },
     {
       "index": 5,
       "sentence": "교육 효과가 지대하다는 것이다.",
       "type": "ambiguous_sentence",
-      "reason": "효과의 정도에 대한 주장이 있지만, 구체적인 근거가 부족합니다.",
-      "other_interpretations": ["효과가 설령 지대하지 않을 수도 있음", "전문가의 협찬 필요"]
+      "reason": "교육 효과에 대한 주관적인 평가로, 구체적인 증거가 부족합니다.",
+      "other_interpretations": ["교육이 긍정적인 결과를 가져온다", "효과가 과장되었을 가능성"]
     },
     {
       "index": 6,
       "sentence": "SW 마에스트로는 AI·SW 전문가의 집중 멘토링, IT기기·장학금 지원 등으로 최고급 개발 인재를 육성하는 프로그램이다.",
-      "type": "clear_sentence"
+      "type": "clear_sentence",
+      "reason": "프로그램의 구체적인 내용을 설명하고 있습니다."
     },
     {
       "index": 7,
       "sentence": "과학기술정보통신부가 주관하고 정보통신기획평가원(IITP)이 전담, 한국정보산업연합회가 수행한다.",
-      "type": "clear_sentence"
+      "type": "clear_sentence",
+      "reason": "기관들의 역할이 명확히 설명되어 있습니다."
     },
     {
       "index": 8,
       "sentence": "AI 전문 교육 플랫폼 기업 엘리스 그룹을 비롯해 '아기상어'로 잘 알려진 더핑크퐁컴퍼니, 글로벌 1위 알람 앱 '알라미' 서비스를 운영하는 딜라이트룸 등이 대표적인 수료생 창업기업이다.",
-      "type": "clear_sentence"
+      "type": "clear_sentence",
+      "reason": "수료생 창업기업 예시가 구체적으로 제시되어 있습니다."
     },
     {
       "index": 9,
       "sentence": "2010년 이래 배출 고급인력이 2008명, 전체 취·창업률 91.3%, 배출 창업기업 149개사에 이를 정도로 성과가 크다.",
-      "type": "clear_sentence"
+      "type": "clear_sentence",
+      "reason": "통계적 데이터로 성과를 설명합니다."
     },
     {
       "index": 10,
       "sentence": "SW 마에스트로 간담회 참석자가 기념촬영했다.",
-      "type": "clear_sentence"
+      "type": "clear_sentence",
+      "reason": "단순한 사실을 전달하고 있습니다."
     },
     {
       "index": 11,
       "sentence": "왼쪽부터 강도현 과기정통부 차관, 박정현 비브리지 대표, 강상진 아카마이코리아 상무, 박지인 예비창업자, 김수인 엘리스 공동 창업자, 김유정 모니모니 개발자, 김지수 네이버 개발자, 홍진배 IITP 원장.",
-      "type": "clear_sentence"
+      "type": "clear_sentence",
+      "reason": "기념사진 속 인물들이 구체적으로 나열되어 있습니다."
     },
     {
       "index": 12,
       "sentence": "다른 수료생, 멘토 등도 SW 마에스트로에 호평 일색이었다.",
       "type": "ambiguous_sentence",
-      "reason": "호평 일색이라는 주관적인 의견이 포함되어 있습니다.",
-      "other_interpretations": ["일부는 실제로 호평이 아닐 수 있음", "대부분 호평"]
+      "reason": "'호평 일색'이라는 표현은 주관적인 평가로 다양한 해석이 가능합니다.",
+      "other_interpretations": ["긍정적인 피드백을 주로 받았다", "비판이 없다는 의미는 아님"]
     },
     {
       "index": 13,
       "sentence": "특히 프로그램 중 자율적인 문제 정의, 기획 과정이 뜻깊었다고 입을 모았다.",
       "type": "ambiguous_sentence",
-      "reason": "주관적인 평가와 일반화가 포함되어 있습니다.",
-      "other_interpretations": ["일부 의견일 수 있음", "다수가 긍정적으로 평가"]
+      "reason": "주관적 의견으로, 구체적인 예시가 부족합니다.",
+      "other_interpretations": ["문제 정의 과정이 중요성을 가짐", "자가 발전 가능성을 높인다"]
     },
     {
       "index": 14,
       "sentence": "네이버에 입사한 김지수 개발자(11기 수료)는 “문제가 주어지는 것이 아니라, 스스로 정의하고 기획해 문제를 해결하는 것이 SW 마에스트로 프로그램”이라며 “이는 커리어를 쌓을수록 더 빛을 발할 것”이라고 기대했다.",
       "type": "ambiguous_sentence",
-      "reason": "미래에 대한 기대와 주관적 판단이 포함되어 있습니다.",
-      "other_interpretations": ["주어진 문제 없이 일하는 것이 항상 장점이 아닐 수 있음", "시간이 지나면 더 가치가 커질 것"]
+      "reason": "주관적 기대와 미래에 대한 예측이 포함되어 있습니다.",
+      "other_interpretations": ["자기 주도적 학습을 강조", "커리어 발전에 긍정적 영향을 미침"]
     },
     {
       "index": 15,
       "sentence": "SW 마에스트로 프로그램이 기술 동향에 선제 대응한다는 평가도 있었다.",
       "type": "ambiguous_sentence",
-      "reason": "평가에 대한 구체적인 근거가 부족하고, 다양한 해석의 여지가 있습니다.",
-      "other_interpretations": ["항상 선제 대응이 아닐 수도 있음", "타당한 평가"]
+      "reason": "평가의 구체적 근거가 부족하여 다양한 해석이 가능합니다.",
+      "other_interpretations": ["기술 변화에 빠르게 적응함", "정확한 근거가 부족할 수 있음"]
     },
     {
       "index": 16,
       "sentence": "지난 2012~2019년, 2022년 이후 지금까지 멘토로 활동 중인 강상진 아카마이코리아 상무는 “최근 사용자를 이해하고, 이들이 원하는 결과를 내놓는 능력이 AI 분야에서 부각되는데, SW 마에스트로는 이미 2~3년 전부터 이런 학습을 시키고 있다",
       "type": "ambiguous_sentence",
-      "reason": "과거와 현재의 비교가 명확하지 않고, 일반화의 가능성이 있습니다.",
-      "other_interpretations": ["모든 수료생이 충분한 교육 받지 않았을 수 있음", "일부 수료생에겐 긍정적 효과"]
+      "reason": "과거와 현재를 비교한 주관적 의견을 포함하고 있습니다.",
+      "other_interpretations": ["트렌드에 맞춰 학습 기회를 제공", "사용자 중심의 학습이 강조됨"]
     },
     {
       "index": 17,
       "sentence": "”고 설명했다.",
-      "type": "clear_sentence"
+      "type": "clear_sentence",
+      "reason": "이전 문장의 인용을 끝맺는 역할을 합니다."
     },
     {
       "index": 18,
       "sentence": "간담회에 참석한 강도현 과기정통부 차관은 “SW 마에스트로 수료생의 좋은 소식을 들으면 뿌듯한 마음”이라며 지속적인 지원을 약속했다.",
       "type": "ambiguous_sentence",
-      "reason": "감정적인 표현이 들어가 있으며, 지원의 구체성이 부족합니다.",
-      "other_interpretations": ["지속 지원의 실효성 의문", "긍정적 방향"]
+      "reason": "감정적 표현과 미래에 대한 약속이 포함되어 주관적입니다.",
+      "other_interpretations": ["정부 지원의 중요성을 강조", "긍정적 기분을 표현"]
     },
     {
       "index": 19,
       "sentence": "홍진배 IITP 원장은 “AI 대전환(AX) 시기에는 최고급 SW 인재 확보가 매우 중요하다”며 “SW마에스트로가 그 마중물 역할을 하고 있다”고 강조했다.",
       "type": "ambiguous_sentence",
-      "reason": "비유적인 표현이 사용되어 사업의 역할이 명확하지 않습니다.",
-      "other_interpretations": ["실제 역할이 부족할 수 있음", "중요한 기여"]
+      "reason": "'마중물 역할'이라는 비유적 표현을 사용하고 있습니다.",
+      "other_interpretations": ["인재 양성의 중요성을 강조", "SW 마에스트로의 선두적 역할을 비유"]
     },
     {
       "index": 20,
       "sentence": "SW 마에스트로 마포 연수센터 개소식에 참여한 주요 인사들이 테이프 커팅식을 하고 있다.",
-      "type": "clear_sentence"
+      "type": "clear_sentence",
+      "reason": "구체적인 행사 내용을 전달하고 있습니다."
     },
     {
       "index": 21,
       "sentence": "사진 왼쪽부터 정진섭 한국정보산업연합회 회장, 홍진배 정보통신기획평가원(IITP) 원장, 박충권 의원, 조정훈 의원, 강도현 차관, 김종우 서울경제진흥원 창업본부장.",
-      "type": "clear_sentence"
+      "type": "clear_sentence",
+      "reason": "사진 속 인물들이 구체적으로 나열되어 있습니다."
     },
     {
       "index": 22,
       "sentence": "이날은 마포 신규 연수센터가 문을 연 날이기도 하다.",
-      "type": "clear_sentence"
+      "type": "clear_sentence",
+      "reason": "객관적 사실을 단순히 설명하고 있습니다."
     },
     {
       "index": 23,
       "sentence": "연수센터는 기존 선릉에서 마포로 이전하며 시설을 확충, 연수생에게 개선된 개발 환경을 제공한다.",
-      "type": "clear_sentence"
+      "type": "clear_sentence",
+      "reason": "구체적인 이전 위치와 목적을 명확히 설명합니다."
     },
     {
       "index": 24,
       "sentence": "개소식에는 강 차관과 조정훈·박충권 국회의원을 비롯해 수료생 출신 창업자, 16기 신규 연수생 등 130여명이 참석했다.",
-      "type": "clear_sentence"
+      "type": "clear_sentence",
+      "reason": "행사 참석자의 수와 구성에 대해 명확히 설명하고 있습니다."
     },
     {
       "index": 25,
       "sentence": "강 차관은 환영사에서 “산업계 최고 멘토, 잠재력 가진 멘티를 모으면 시너지가 날 것이라는 생각으로 SW 마에스트로가 이뤄졌다”며 “앞으로 마포 연수센터에서 세계를 무대로 활약하는 개발자가 등장하기를 기대하며, 정부도 지원을 아끼지 않을 것”이라고 밝혔다.",
       "type": "ambiguous_sentence",
-      "reason": "희망적 기대와 정부 지원 약속이 주관적으로 들립니다.",
-      "other_interpretations": ["실제 지원이 부족할 수 있음", "긍정적 기대"]
+      "reason": "미래에 대한 기대와 감정적 표현이 포함되어 있습니다.",
+      "other_interpretations": ["프로그램의 시너지를 강조", "정부 지원의 중요성을 역설"]
     },
     {
       "index": 26,
       "sentence": "홍 원장은 “새 연수센터는 AI·SW 핵심 인재 양성의 중요 거점으로, 창업·혁신 중심지인 마포 지역 인프라를 적극 활용해 기술창업 생태계를 강화하는 초석이 될 것”이라며 “SW 마에스트로가 우리나라 AI·SW 산업 미래를 밝히도록 IITP가 응원하고 지원하겠다”고 전했다.",
       "type": "ambiguous_sentence",
-      "reason": "비유적 표현이 사용되었고, 지원의 구체성이 부족합니다.",
-      "other_interpretations": ["지역 인프라 활용이 부족할 수 있음", "긍정적 변화 예상"]
+      "reason": "미래에 대한 비유적 기대와 지원 의사가 담겨 있습니다.",
+      "other_interpretations": ["마포의 역할을 강조", "SW 마에스트로의 영향력 확대를 암시"]
     }
   ],
   "results": {
     "clear_sentence": 12,
     "ambiguous_sentence": 14,
-    "summary": "과기정통부와 IITP 주최의 SW 마에스트로 프로그램의 역할과 성과를 다루며, 프로그램의 필요성과 실효성에 대한 다양한 의견을 제시한다. 프로그램의 장점과 개선된 교육 환경은 호평받고 있지만, 일부 주관적 평가와 미래 기대가 포함되어 있다.",
-    "author_intent": "저자는 SW 마에스트로 프로그램의 중요성과 성과를 강조하고, 교육과 지원의 필요성을 알리려 한다. 이와 더불어 해당 프로그램이 기술 동향에 어떻게 대응하며 인재를 양성하는지 설명하려 한다."
+    "summary": [
+      "과기정통부와 IITP는 SW 마에스트로 수료생 간담회를 마포 연수센터에서 개최했다.",
+      "프로그램의 교육 방식은 AI 실무 문제 해결에 중점을 둔다.",
+      "주요 성과로는 높은 취업률과 창업 기업의 성공이 언급되었다.",
+      "새로운 마포 연수센터가 기술 창업 육성의 거점으로 자리 잡을 예정이다."
+    ],
+    "author_intent": [
+      "저자는 SW 마에스트로 프로그램의 성과와 중요성을 강조하고 있습니다.",
+      "프로그램의 교육 방식과 시설 확장의 이점을 부각하려고 합니다.",
+      "정부와 기관의 지속적인 지원 의지를 전달하려고 합니다."
+    ]
   }
 }
