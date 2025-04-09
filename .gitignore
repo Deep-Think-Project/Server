@@ -1,5 +1,5 @@
 # Ignore the virtual environment
-venv
+venv/
 # Ignore the database
 db.sqlite3
 # Ignore the cache
@@ -9,5 +9,7 @@ db.sqlite3
 **/migrations/*
 # But keep the __init__.py file (to ensure the folder is included in the repository)
 !**/migrations/__init__.py
-
+# Ignore the .env file
 .env
+# Ignore the output folder
+output/
