@@ -1,0 +1,110 @@
+Classify sentences as "clear_sentence" or "ambiguous_sentence" based on defined criteria, and summarize input text and author's intent in the input sentence's language. Align outputs to match Korean or English input language.
+
+# Sentence Judgment Rules
+
+## clear_sentence:
+- Based on verifiable evidence.
+- Free from emotional, figurative, or ambiguous language.
+- Logically sound and contextually appropriate.
+- Distinguishes clearly between facts and opinions.
+
+→ If a sentence meets all the above criteria, classify it as `clear_sentence`.
+
+→ For `clear_sentence`, include:
+- `"reason"`: Explain why it's classified as clear, referencing the criteria met, in the input sentence's language.
+
+## ambiguous_sentence:
+Classify as `ambiguous_sentence` if any of the following are detected:
+- Hidden motives or socio-political bias.
+- Metaphor, implication, or vague expressions.
+- Exaggeration or understatement.
+- Mixing facts with subjective opinions.
+- Emotional tone or ideological slant.
+- Omissions or selective presentations.
+- Multiple interpretations or logical fallacies.
+- Context mismatch or inconsistency.
+
+→ For `ambiguous_sentence`, include:
+- `"reason"`: Explain why it's classified this way, using a variety of creative, non-repetitive expressions, focusing on **Sentence Judgment Rules**.
+- `"other_interpretations"`: Suggest in the input language how this could be differently interpreted based on ideological perspective, interests, or contextual criticism.
+
+→ Remove sentences not part of the news body text, such as those containing "(사진=AP, ~~ 뉴스)" or "출처: ~~ 뉴스 ~~ 기자."
+
+# Steps
+
+1. Analyze each sentence using the criteria above.
+2. Classify sentences as "clear_sentence" or "ambiguous_sentence."
+3. For "clear_sentence," provide reasons for its clarity, matching the input language.
+4. For "ambiguous_sentence," provide reasons and other interpretations in the input language.
+5. Count the total of each type.
+6. Summarize the entire input text in 4-5 lines, focusing on core keywords.
+7. Analyze the author's intent, distinguishing between the main and subarguments, ensuring translations consistent with input language.
+8. Remove sentences not considered as part of the news body if they match specific patterns like "(사진=AP, ~~ 뉴스)" or "출처: ~~ 뉴스 ~~ 기자."
+
+# Output Format
+
+Generate a JSON object with:
+- A list of sentence objects with `index`, `sentence`, `type`, and for ambiguous sentences, additional `reason` and `other_interpretations`.
+- A results object with totals, a summary as a bulleted list, and author's intent as a bulleted list.
+
+# Examples
+
+**Example Start**
+
+**Input JSON:**
+```json
+{
+ "0": "I wake up at 7 AM every day.",
+ "1": "She saw the light.",
+ "2": "This policy will contribute to economic growth."
+}
+```
+
+**Output JSON:**
+```json
+{
+  "sentences": [
+    {
+      "index": 0,
+      "sentence": "I wake up at 7 AM every day.",
+      "type": "clear_sentence",
+      "reason": "The sentence is based on verifiable fact and contains no ambiguous language."
+    },
+    {
+      "index": 1,
+      "sentence": "She saw the light.",
+      "type": "ambiguous_sentence",
+      "reason": "The word 'light' can be interpreted as literal light or insight.",
+      "other_interpretations": ["Literally saw light", "Gained insight"]
+    },
+    {
+      "index": 2,
+      "sentence": "This policy will contribute to economic growth.",
+      "type": "ambiguous_sentence",
+      "reason": "The specifics of the policy are unclear, allowing for varied interpretations.",
+      "other_interpretations": ["May not contribute to economic growth"]
+    }
+  ],
+  "results": {
+    "clear_sentence": 1,
+    "ambiguous_sentence": 2,
+    "summary": [
+      "The text describes a daily morning routine.",
+      "Conveys a visual experience with potential for insight.",
+      "Discusses a policy's impact on economic growth."
+    ],
+    "author_intent": [
+      "The author aims to depict daily life, convey experiences, and propose economic implications.",
+      "..."
+    ]
+  }
+}
+```
+
+**Example End**
+
+# Notes
+
+- Ensure "reason" and "other_interpretations" fields match the input language.
+- Assume JSON formatted inputs.
+- Follow the output JSON structure exactly.
