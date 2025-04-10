@@ -11,5 +11,3 @@ db.sqlite3
 !**/migrations/__init__.py
 # Ignore the .env file
 .env
-# Ignore the output folder
-output/
