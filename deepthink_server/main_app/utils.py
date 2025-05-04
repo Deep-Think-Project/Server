@@ -21,6 +21,7 @@ def input_type_check(input):
         str: "URL" or "Plain Text"
     """
     
+    print(f"[Start] Input type check")
     # extension list for image and other resources
     excluded_extensions = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.webp', '.svg']
 
@@ -47,8 +48,10 @@ def input_type_check(input):
     )
     
     if url_pattern.match(input.strip()):
+        print(f"[COMPLETE] Input type check - URL")
         return "url"
     else:
+        print(f"[COMPLETE] Input type check - Plain Text")
         return "plain-text"
 
 # text extraction without whitespace from (clean ver.)
@@ -86,6 +89,7 @@ def extract_text_with_whitespace(url):
         raise Exception(f"URL 요청 실패, 상태 코드: {response.status_code}")
     
 def indexing_text(article, input_type):
+    print(f"[Start] Indexing text to JSON format")
     # 한국어 모델 로드
     nlp = spacy.load("ko_core_news_sm")
 
@@ -110,11 +114,13 @@ def indexing_text(article, input_type):
     output_path = os.path.join(settings.BASE_DIR, 'output', '2-indexed')
     save_unique_file(output_path, 'indexed_output.json', json_output)
 
+    print(f"[COMPLETE] Indexing text to JSON format")
     return json_output
 
 # text extraction used in main_app/views.py
 def new_extract_text(url):
     try:
+        print(f"[Start] Extract text from URL: {url}")
         # get HTML content from URL
         response = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
         response.raise_for_status()  # check status code
@@ -146,6 +152,7 @@ def new_extract_text(url):
         output_path = os.path.join(settings.BASE_DIR, 'output', '1-raw')
         save_unique_file(output_path, 'extracted_text.txt', text_without_line_breaks)
         
+        print(f"[COMPLETE] Extract text from URL")
         return text_without_line_breaks
     except requests.exceptions.RequestException as e:
         raise Exception(f"URL 요청 중 오류 발생: {e}")
@@ -248,33 +255,54 @@ def save_unique_file(directory: str, base_filename: str, content: str) -> str:
             return filepath
         count += 1
 
-# extract ambiguous sentences from gpt output
-def extract_ambiguous_sentences(json_data):
+import json
+import os
+
+def extract_ambiguous_sentences(json_input):
     """
     주어진 JSON 데이터에서 type이 'ambiguous_sentence'인 문장만 모아 새로운 JSON 형식으로 반환합니다.
-    
+
     Args:
-        data (dict): 원본 JSON 데이터
-    
+        json_input (str | dict): 원본 JSON 문자열 또는 파싱된 dict 객체
+
     Returns:
         dict: ambiguous_sentence만 포함된 새로운 JSON
     """
+    print("[EXTRACT] Extract ambiguous sentences")
+
+    # str -> dict 변환 (이미 dict라면 그대로 사용)
+    if isinstance(json_input, str):
+        try:
+            data = json.loads(json_input)
+        except json.JSONDecodeError as e:
+            print(f"[ERROR] JSON decode error: {e}")
+            return {"error": "Invalid JSON string"}
+    elif isinstance(json_input, dict):
+        data = json_input
+    else:
+        print("[ERROR] Invalid input type")
+        return {"error": "Input must be a JSON string or dict"}
+
     ambiguous_sentences = [
-        sentence for sentence in json_data.get("sentences", [])
+        sentence for sentence in data.get("sentences", [])
         if sentence.get("type") == "ambiguous_sentence"
     ]
 
     result = {
         "ambiguous_sentences": ambiguous_sentences,
-        # "count": len(ambiguous_sentences)
     }
-    
-    json_to_str = json.dumps(result, ensure_ascii=False, indent=2) # python dict -> json str
-    
+
+    json_to_str = json.dumps(result, ensure_ascii=False, indent=2)
+
     output_path = os.path.join(settings.BASE_DIR, 'output', '4-for_sonar')
     save_unique_file(output_path, 'for_sonar.json', json_to_str)
 
-    return result # python dict
+    print("[COMPLETE] Extract ambiguous sentences")
+    
+    # print(f"{type(result)}")
+
+    return result
+
 
 # call sonar api
 def call_sonar_api(python_dict):
@@ -311,7 +339,7 @@ def call_sonar_api(python_dict):
     # print(response)
 
     content = response.choices[0].message.content
-    final_output = json.loads(content) # str -> json
+    final_output = json.loads(content) # str -> dict
     
     
     output_file_path = os.path.join(settings.BASE_DIR, 'output', '5-sonar_output')
@@ -324,7 +352,10 @@ def call_sonar_api(python_dict):
 from typing import Dict, Any, List
 
 # merge gpt output and sonar output
-def merge_gpt_sonar(gpt_json: Dict[str, Any], sonar_json: List[Dict[str, Any]]) -> Dict[str, Any]:
+import json
+from typing import Dict, Any, List, Union
+
+def merge_gemini(gpt_json: Dict[str, Any], sonar_json: List[Dict[str, Any]]) -> Dict[str, Any]:
     # convert sonar_json to dict for fast lookup by index
     sonar_dict = {item["index"]: item["results"] for item in sonar_json}
 
@@ -336,10 +367,11 @@ def merge_gpt_sonar(gpt_json: Dict[str, Any], sonar_json: List[Dict[str, Any]]) 
             sentence["references"] = []  
 
     # save file for debugging
-    output_path = os.path.join(settings.BASE_DIR, 'output', '6-merge_gpt_sonar')
+    output_path = os.path.join(settings.BASE_DIR, 'output', '6-merge_2gemini_output')
     save_unique_file(output_path, 'merged_output.json', json.dumps(gpt_json, ensure_ascii=False, indent=2))
     
     return gpt_json
+
 
 import base64
 import os
@@ -347,50 +379,113 @@ from google import genai
 from google.genai import types
 
 def call_gemini_api(json_output):
-        client = genai.Client(
-            api_key=os.environ.get("GEMINI_API_KEY"),
-        )
+    print("[Start] GEMINI API")
+    load_dotenv()
+    client = genai.Client(
+        api_key=os.environ.get("GEMINI_API_KEY"),
+    )
 
-        # read system prompt from file
-        SYSTEM_PROMPT_PATH = os.path.join(settings.BASE_DIR, 'main_app', 'system_prompt', 'gpt_system_prompt.txt')
-        with open(SYSTEM_PROMPT_PATH, "r", encoding="utf-8") as file:
-            system_prompt = file.read()
-            
-        model = "gemini-2.5-flash-preview-04-17"
-        print(f"Type of json_output: {type(json_output)}")
-        # print(f"Value of json_output: {json_output}")
-        contents = [
-            types.Content(
-                role="user",
-                parts=[
-                    types.Part.from_text(text=json_output)
-                ],
-            ),
+    # read system prompt from file
+    SYSTEM_PROMPT_PATH = os.path.join(settings.BASE_DIR, 'main_app', 'system_prompt', 'gpt_system_prompt.txt')
+    with open(SYSTEM_PROMPT_PATH, "r", encoding="utf-8") as file:
+        system_prompt = file.read()
+        
+    model = "gemini-2.5-flash-preview-04-17"
+    # model = "gemini-2.0-flash"
+    # print(f"Type of json_output: {type(json_output)}")
+    # print(f"Value of json_output: {json_output}")
+    contents = [
+        types.Content(
+            role="user",
+            parts=[
+                types.Part.from_text(text=json_output)
+            ],
+        ),
+    ]
+    generate_content_config = types.GenerateContentConfig(
+        response_mime_type="application/json",
+        system_instruction=system_prompt  # Corrected structure
+    )
+    try:
+        response = client.models.generate_content(
+            model=model,
+            contents=contents,
+            config=generate_content_config,
+        )
+        
+        # print(f"PRINT RESPONSE {response}")
+        # print(f"PRINT RESPONSE type {type(response)}")
+        # print(f"PRINT RESPONSE {response.text}")
+        # print(f"PRINT RESPONSE type {type(response.text)}")
+        output = response.text
+        # json_obj = json.dumps(response.text, ensure_ascii=False, indent=4)
+
+        # 파일에 JSON 형식으로 저장
+        output_path = os.path.join(settings.BASE_DIR, 'output', '3-gemini_output')
+        save_unique_file(output_path, 'gemini_output.json', output) # JSON 문자열 저장
+
+        print("[COMPLETE] GEMINI API")
+        result_json = json.loads(output)  # JSON 문자열을 파이썬 객체로 변환
+        return result_json  # dict
+
+    except Exception as e:
+        error_message = json.dumps({'error': str(e)}, ensure_ascii=False, indent=2)
+        print(f"[ERROR] GEMINI API - {e}")
+        return error_message
+
+def call_gemini_websearch_api(input):
+    print("[Start] GEMINI-WEBSEARCH API")
+    
+    SYSTEM_PROMPT_PATH = os.path.join(settings.BASE_DIR, 'main_app', 'system_prompt', 'sonar_system_prompt.txt')
+    with open(SYSTEM_PROMPT_PATH, "r", encoding="utf-8") as file:
+        system_prompt = file.read()
+    
+    input_str = json.dumps(input, ensure_ascii=False, indent=2) # python dict -> json str
+    
+    load_dotenv()
+    client = genai.Client(
+        api_key=os.environ.get("GEMINI_API_KEY"),
+    )
+
+    model = "gemini-2.5-flash-preview-04-17"
+    contents = [
+        types.Content(
+            role="user",
+            parts=[
+                types.Part.from_text(text=input_str),
+            ],
+        ),
+    ]
+    tools = [
+        types.Tool(google_search=types.GoogleSearch()),
+    ]
+    generate_content_config = types.GenerateContentConfig(
+        tools=tools,
+        response_mime_type="text/plain",
+        system_instruction=[
+            types.Part.from_text(text=system_prompt)
         ]
-        generate_content_config = types.GenerateContentConfig(
-            response_mime_type="text/plain",
-            system_instruction=system_prompt  # Corrected structure
-        )
-        try:
-            response = client.models.generate_content(
-                model=model,
-                contents=contents,
-                config=generate_content_config,
-            )
-            generated_text = response.text if response and response.text else ""
-            json_obj = json.dumps(generated_text, ensure_ascii=False, indent=4)
+    )
+    
+    response = client.models.generate_content(
+        model=model,
+        contents=contents,
+        config=generate_content_config,
+    )
+    print(f"PRINT RESPONSE {response.text}")
+    result = response.text
 
-            # 파일에 JSON 형식으로 저장
-            output_path = os.path.join(settings.BASE_DIR, 'output', '3-gemini_output')
-            save_unique_file(output_path, 'gemini_output.json', json_obj) # JSON 문자열 저장
-
-            print("[COMPLETE] GEMINI API")
-            return json_obj  # JSON 문자열 반환
-
-        except Exception as e:
-            error_message = json.dumps({'error': str(e)}, ensure_ascii=False, indent=4)
-            print(f"[ERROR] GEMINI API - {e}")
-            return error_message
+    # cleaned = result.strip().removeprefix("```json").removesuffix("```").strip()
+    # parsed = json.loads(cleaned)
+    # trimmed = parsed[1:-1]
+    # result_str = json.dumps(trimmed, indent=2, ensure_ascii=False)    
+    
+    output_file_path = os.path.join(settings.BASE_DIR, 'output', '5-gemini_websearch_output')
+    save_unique_file(output_file_path, 'gemini_output.json', result)
+    
+    print("[COMPLETE] GEMINI-WEBSEARCH API")
+    print(f"PRINT RESPONSE {type(result)}")
+    return result #dict
 
 import time
 

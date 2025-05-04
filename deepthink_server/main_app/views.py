@@ -2,7 +2,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 
-from .utils import input_type_check, indexing_text, new_extract_text, call_gpt_api, extract_ambiguous_sentences, call_sonar_api, merge_gpt_sonar, timer_thread, call_gemini_api
+from .utils import input_type_check, indexing_text, new_extract_text, call_gpt_api, extract_ambiguous_sentences, call_sonar_api, merge_gemini, timer_thread, call_gemini_api, call_gemini_websearch_api
 
 import time
 import threading
@@ -46,7 +46,7 @@ def home_view(request):
                 first_gpt_output = call_gpt_api(json_output) # call gpt api
                 output_for_sonar = extract_ambiguous_sentences(first_gpt_output) # extract ambiguous sentences from gpt output
                 sonar_output = call_sonar_api(output_for_sonar) # call sonar api
-                final_output = merge_gpt_sonar(first_gpt_output, sonar_output) # merge gpt and sonar output
+                final_output = merge_gemini(first_gpt_output, sonar_output) # merge gpt and sonar output
                 
             except Exception as e:
                 return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
@@ -96,12 +96,11 @@ def gemini_view(request):
                 input_text = extracted_text
 
             try:
-                json_output = indexing_text(input_text, input_type) # change to JSON format
-                llm_output = call_gemini_api(json_output) # call gpt api
-                output_for_sonar = extract_ambiguous_sentences(llm_output) # extract ambiguous sentences from gpt output
-                return Response(output_for_sonar, status=status.HTTP_200_OK)
-                sonar_output = call_sonar_api(output_for_sonar) # call sonar api
-                final_output = merge_gpt_sonar(first_gpt_output, sonar_output) # merge gpt and sonar output
+                post_indexed_output = indexing_text(input_text, input_type) # change to JSON format
+                llm_output = call_gemini_api(post_indexed_output) # call gpt api
+                output_for_websearch = extract_ambiguous_sentences(llm_output) # extract ambiguous sentences from gpt output
+                post_websearch_output = call_gemini_websearch_api(output_for_websearch) # call sonar api
+                final_output = merge_gemini(llm_output, post_websearch_output) # merge gpt and sonar output
                 
             except Exception as e:
                 return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)

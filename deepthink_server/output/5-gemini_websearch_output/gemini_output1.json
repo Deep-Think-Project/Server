@@ -1,0 +1,583 @@
+[
+  {
+    "index": 3,
+    "results": [
+      {
+        "source_title": "[활동] 흙을 만지며, 도시의 생명을 불어넣는 '도시농업의 날' : 환경정의",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKu-By5mTkg_B8P4dcb9FW_WjRFKMoaenGCqgnBGwdmVd1MV7qvZJeqlPxfTccQkgDakfEDaXrEGkoMjLEKZAzCOXf7S8vdPe0wB8YS7xTj3YwzMXxa8zkWidmmZwsOFvemqFEqojXFF3kiXpc="
+      },
+      {
+        "source_title": "도시농업의 날을 아시나요? - 카드/한컷 | 멀티미디어 | 대한민국 정책브리핑",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAJ2w-03thYlt-H8i-RG3H7PomS65Z-9_l8hRDWN684OY57cnShfFgFSKcYof_qipLsse_Wn4L_c51UyAQbsQKpWvxHHdz2egzkbVPQSgPRV2RH4AO4tTwq6E4QHnU-0b8YHfEBxMY0K4JmWGqrPnjtjImXS69WuGqe3g-UsspOWGmphDhcNLFM="
+      },
+      {
+        "source_title": "[기고] 도시농업과 도농상생 - 영남일보",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAI5rpTlcnUKnz7n_9a_PWbrmPdvJTYUfF8aLhlL5KYqp8SMNNIDdwyo6qQO5WTxlJCifwbYbTKNBRxJBfUtVmsD6PGkWcGnnjF-Qs_XbMztgjGxxXJLt_ekUnulj6MjMZCErPUcjqXyXifSPlq2OPGr1g=="
+      },
+      {
+        "source_title": "순천시, 제3회 도시농업의 날 … '도시농부 어울림 한마당' 성료 - 전국매일신문",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKAVJrT4KPhaGu_IX9YVafzi-s_hR9_q6yMRaRxuQucc6liBAQImkgDgawJBkllI5RF309FwPdbHPrI6bLQjHz9r2Z-k0ZYKzYVpKNpLjYIZk_3dVBt_ZVU0hgQB_7Zf8l1Sxd_Qm1nDrUVC_N-ZlTTyBt8"
+      },
+      {
+        "source_title": "경기도, 시흥에서 '제2회 경기도 도시농업의 날' 행사 개최 - 국민기자뉴스",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKSc_WJpUbHsL5kg9w_VpoV7hl6mqXrZZXO8wvLtvaoFFrrho77mvqvfb5onIZA8bSi96xSKBZAVUve4nVHKJuTR5RRwguNy0ev8o4wZPRdpiVl4cu5kTkCBHgnt7_iIo5FB6XNDrLr7-X"
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "results": [
+      {
+        "source_title": "도시농업에 대한 시민인식 조사 결과 보고서 - 서울농부포털",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALC52OoOjzqH-fak_0-QiedV0ftUlR8JCUfF-mOct78ektyhyloYBu-I10WFxf_O9egdrZq1ewS_eaDnjNHos2TnidGVxdfM290IRdCWRaJSlSTdLjmKRtM44jDQUZi215sMlgo9G0k1qjquQ7Eba4eG-D8gCCIiQveeGedZmA="
+      },
+      {
+        "source_title": "수직 농장, 도시에서 찾은 농업의 미래 - 카이스트신문",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAJ2dODGq8kLt7USKQhIBAhWtYm3qCMqvGfj-jlbeoUo4RZ_k7YQq-Qy0WRq6T9lSkyRwldoN0Ltvan-E3GrjxZAlju2k-Guc4Fe5n0PfFYBEG8zXyuN3VP62AjR3nHoBir5MEZ365CXnXtEE9CvNESw"
+      },
+      {
+        "source_title": "미래사회 도시농업의 필요성 - 복원에서 공생으로",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAIA8ESW-PdbPq94OXdb5_cHppGRmp5Ohh7zeeju08rRXqKshzbTVm1XlhRt-sa8f0B7qytsy0bIdbBULvWa3ZuilGI3ytkZNIOZh01JbdE0NZ9_1ymmGFo="
+      },
+      {
+        "source_title": "도시농업의 비전과 과제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAJe96GZChIfSxxLUADvVSiTpbyAZbYP_O5CykqoleBdvx1xOpO50iCIZdNC_GCzT2HsMHtctekXY-wEsFqyXllUTRQbywCIy67msOi0MUqMVeMuJwuZpaeFpyhWEWcmSguCIRvoAkAWdTxWVD0H-YKvKtxEwwXNmpnBS97K_ozqmYMGfLqeAqK-6SXfHwZVVCRAeQhGzBQ-cNbTTZ-20WXTPWN0l7FOvkoGGQ4C5_K8DkUHduJKikDm4NMl64n_65-zQr9_A-G3HPSYkBfC82U1bCXXSw=="
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "results": [
+      {
+        "source_title": "도시농업의 매력과 가치 : 네이버 블로그",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAJyZH4oRGtwIeFO8dW9fpJYWYOIYJ4qeNiykvzZhyOjfeBUuN6dhQtTzX9Cu7hCwsHh9lMSpj8x4oce9Rv9vUQQPUPAaUnXujEaAgeX-8DpqmxuBHayTnQt6bD2RuxMKbcjuvv8Bs_45rfN5ohdFg=="
+      },
+      {
+        "source_title": "도시농업의 날! 도시농장 스마트팜 텃밭 가꾸기 : 네이버 블로그",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAJS8dKuV5x4Gbh1Qa9o3HijsjNhwC5VnwQCL6uhbu8C3uBKj_p2TPt3WScCr7rRagxOMWL-O2Cd2kvPiyv8PTZFdFbXfq7OSCpYWlasBIngAH_Dgxz1CfGrQ6nzJ6xkv9q7"
+      },
+      {
+        "source_title": "[의정언박싱] 방성환 도의원 \"도시와 농촌 마중물 역할 위해 도시농업 활성화돼야\" - 경인방송",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALZRoPv-yQj9dibfKtNbV90YyCVc3V_-5YMdbab8vAxlNQ_az7iUrJGqzuTDOviqvAbGogJp_R6id1FrrRUUnfk4OEJR_W0d7E2GnmA8NczBiV9W7t5dbZhZvYX7jil7S0-KtzCSz_A9dLTEsw="
+      },
+      {
+        "source_title": "지역단위 도시농업 활성화 방안과 실천과제 - Jthink Repository",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAIRroM4g7nVJqujYbYcqX2gSfvYfQoCgUdXp66hLAJiNnM9Fp0sT3Ga5VhJURWdOXinrvGkI0DSh-YBPf85hHW4VxZY2pDhwHUfOa5_1FX--_MODmBWjWUKY-Rv0cYdNKqAItnk8VTxSA3X8QF_Hv08689qRkfaC_vWNwmeEgqXfEDJEFqoztStl4XWnb_e9cGKoYUYzI27RW957xK3ZV4ZXFw="
+      },
+      {
+        "source_title": "도시농업 참여 - 공유농업 아이디어 모음",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAL6BU3K63O_jZaaBx8rb56p9aV6CVZfxXNy12DkrabLjif_Fv4TsP8jxbOXZbllxSM2yy2c3hBCMMuCMqw8R_SyDAw7W8IPUoB8K_4SJdocgoQ4aa63EggaUdoGkdfha94TtE0HHrNX56cjvtRVPesJ0PZWq5slpgjQ3MPGQOaPZ_hzrc_C_jgYBfH565ddsLGz6gdH"
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "results": [
+      {
+        "source_title": "미래사회 도시농업의 필요성 - 복원에서 공생으로",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAIA8ESW-PdbPq94OXdb5_cHppGRmp5Ohh7zeeju08rRXqKshzbTVm1XlhRt-sa8f0B7qytsy0bIdbBULvWa3ZuilGI3ytkZNIOZh01JbdE0NZ9_1ymmGFo="
+      },
+      {
+        "source_title": "[치유농업사 김동영의 힐링노트] 2025-9회 - 원예닷컴",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAK94PUyYcdA1T23EVKWOQy_MXEb4c98LNbS2Tq0fPNGbggM26RSltwXUVD-zQLISGGecbs7Ryt5nrpRMyUMmAk3_Q8sYU-_k5lofFfZESTFaYMcyu_uzBewtMjOVdq2a9FYBBt4sbVlUOcMFxri9A==몸과"
+      },
+      {
+        "source_title": "도시 생활 농업이 가져오는 심리적 안정과 교육적 효과 - Goover",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALF1mPHt-5oyi2Hp6lEh7ygvCkgPnA-d5lcugsR5TH6hHIYMQJ8BLDhkzMgvRCb6ofXXP0PJJwd1ICRLl-ODn29xD8mJQ8ztUTt7ilHmeSUV9VEU3inpzdpYcoMWfu3UKlANJsXAcuY5a4z_DEKT0xW7STrppxME8O6lmoin0_pgWDeh14Caks0Z0c6WYboF35QgCZyx4UAGU3u1g=="
+      },
+      {
+        "source_title": "원예치료란? - 농사로",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKyR5i5A4kv-tNZ-9wy0XT549AudvobxFIArGI18w7OoV1f6tR6iUA0sE4O5XO3Xw32ZzwFTVt73Ss6MDsPmGGoEZm4TjJNKx23qVZKtjNJHUQq1qRshk-OVRbIYpDTHHzk90hsizDzm_ZFnQsO-J7j-KsyWUjzp3sXUKQPXCOD8jA=="
+      },
+      {
+        "source_title": "실내식물로 치유·가습·미세먼지 한번에 해결 - 연합뉴스TV",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKdilLaiJyJ4L6gAafWsmzASLlCqQShZri9eeFbvIVW8lKqlJGIseVxwZB4FdDBGAffrpWarGSE3p1PqnInjPB7rkus1aNDi3AiXqbxwNe9bLvzRMhSlCXjTfWGXMiVAh4bVAWwhlxzjq8IB88="
+      }
+    ]
+  },
+  {
+    "index": 11,
+    "results": [
+      {
+        "source_title": "도시농업에 대한 시민인식 조사 결과 보고서 - 서울농부포털",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALC52OoOjzqH-fak_0-QiedV0ftUlR8JCUfF-mOct78ektyhyloYBu-I10WFxf_O9egdrZq1ewS_eaDnjNHos2TnidGVxdfM290IRdCWRaJSlSTdLjmKRtM44jDQUZi215sMlgo9G0k1qjquQ7Eba4eG-D8gCCIiQveeGedZmA="
+      },
+      {
+        "source_title": "수직 농장, 도시에서 찾은 농업의 미래 - 카이스트신문",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAJ2dODGq8kLt7USKQhIBAhWtYm3qCMqvGfj-jlbeoUo4RZ_k7YQq-Qy0WRq6T9lSkyRwldoN0Ltvan-E3GrjxZAlju2k-Guc4Fe5n0PfFYBEG8zXyuN3VP62AjR3nHoBir5MEZ365CXnXtEE9CvNESw"
+      },
+      {
+        "source_title": "미래사회 도시농업의 필요성 - 복원에서 공생으로",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAIA8ESW-PdbPq94OXdb5_cHppGRmp5Ohh7zeeju08rRXqKshzbTVm1XlhRt-sa8f0B7qytsy0bIdbBULvWa3ZuilGI3ytkZNIOZh01JbdE0NZ9_1ymmGFo="
+      },
+      {
+        "source_title": "도시농업의 다원적 가치 공유하자 - 농촌여성신문",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALjoO-r5brioYbSPh0-VqPPKQixzDGTtQetQeEk15lWpu4nB10X_1RZBZvEKZeDALkI2HegSQdpLNTTk4nJSTueyAN3fp5_pOV8NVoen2gtLN0qnZq_Wu7y_meH1ZCpj5jV7nHz9y7OMgGdBuW8"
+      },
+      {
+        "source_title": "도시농업 참여 - 공유농업 아이디어 모음",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAL6BU3K63O_jZaaBx8rb56p9aV6CVZfxXNy12DkrabLjif_Fv4TsP8jxbOXZbllxSM2yy2c3hBCMMuCMqw8R_SyDAw7W8IPUoB8K_4SJdocgoQ4aa63EggaUdoGkdfha94TtE0HHrNX56cjvtVPesJ0PZWq5slpgjQ3MPGQOaPZ_hzrc_C_jgYBfH565ddsLGz6gdH"
+      },
+      {
+        "source_title": "원예치료란? - 농사로",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKyR5i5A4kv-tNZ-9wy0XT549AudvobxFIArGI18w7OoV1f6tR6iUA0sE4O5XO3Xw32ZzwFTVt73Ss6MDsPmGGoEZm4TjJNKx23qVZKtjNJHUQq1qRshk-OVRbIYpDTHHzk90hsizDzm_ZFnQsO-J7j-KsyWUjzp3sXUKQPXCOD8jA=="
+      },
+      {
+        "source_title": "많은 이점을 가져오기 위한 도시 농업 확장 - Securities.io",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALN21xNd_eiroWXLpUBSn-6dExU5Nk6h0Yry4oQwxRUHMJvEab5jLStz_cNa7mKlOgYKsZE2VhQmftEc4U-6kipr972ndZ3cFBHhQMJaBPjvYL7Ciuv1i0qy6P9A6T1qyAqbVVuLN_K1Pd9fBgSo5zXLEtoBet8kDcZs9pKtP7fHFH3olQ=="
+      }
+    ]
+  },
+  {
+    "index": 15,
+    "results": [
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - 아시아경제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKOCiU-P4ajKCi96u1HIOATAT_C2jySs-ddZQmmtT4UhufTUMm-LztD9KbOWDU73DGr27KodFk8UnhAtX1ah5-8nGQgsk8_misJyGGjv0ExS_uHt49QgC6g4KKrxJa27H8Ie-661NcCXwc="
+      },
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - Daum",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAIlWKtCwdjRh4Gk2ZDg69MD-Mgas39hYNH3NLzPmx1zU6Ab1Ct7Odeu_kswvr80NKgAl0-qeZ0L70jh8kBWRhBJZEcPtWRs178p-eDNPqp_NvPwmbS_EongCwJqdQ=="
+      },
+      {
+        "source_title": "도시농업의 비전과 과제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAJe96GZChIfSxxLUADvVSiTpbyAZbYP_O5CykqoleBdvx1xOpO50iCIZdNC_GCzT2HsMHtctekXY-wEsFqyXllUTRQbywCIy67msOi0MUqMVeMuJwuZpaeFpyhWEWcmSguCIRvoAkAWdTxWVD0H-YKvKtxEwwXNmpnBS97K_ozqmYMGfLqeAqK-6SXfHwZVVCRAeQhGzBQ-cNbTTZ-20WXTPWN0l7FOvkoGGQ4C5_K8DkUHduJKikDm4NMl64n_65-zQr9_A-G3HPSYkBfC82U1bCXXSw=="
+      }
+    ]
+  },
+  {
+    "index": 16,
+    "results": [
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - 아시아경제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKOCiU-P4ajKCi96u1HIOATAT_C2jySs-ddZQmmtT4UhufTUMm-LztD9KbOWDU73DGr27KodFk8UnhAtX1ah5-8nGQgsk8_misJyGGjv0ExS_uHt49QgC6g4KKrxJa27H8Ie-661NcCXwc="
+      },
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - Daum",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAIlWKtCwdjRh4Gk2ZDg69MD-Mgas39hYNH3NLzPmx1zU6Ab1Ct7Odeu_kswvr80NKgAl0-qeZ0L70jh8kBWRhBJZEcPtWRs178p-eDNPqp_NvPwmbS_EongCwJqdQ=="
+      },
+      {
+        "source_title": "지속 가능한 탄소 배출 제로 '스마트팜', 지방에서 도시까지 농업 범위 확산한다 - 피플투데이",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALgVeK5_t0F-UV91Hqs7qk2Dk1idSmG3xQdgIAP4QE476mmD8YSKur1OWz5rjMsCGF3kMuMTtBFqQ2tK3RuqaC18jxsmYdMdn7kBPgCPDKRfNkBdcCCUblIfwm6DfNI5dETBhxkbZdaXdw53Su0ipWqg_Nq"
+      }
+    ]
+  },
+  {
+    "index": 20,
+    "results": [
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - 아시아경제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKOCiU-P4ajKCi96u1HIOATAT_C2jySs-ddZQmmtT4UhufTUMm-LztD9KbOWDU73DGr27KodFk8UnhAtX1ah5-8nGQgsk8_misJyGGjv0ExS_uHt49QgC6g4KKrxJa27H8Ie-661NcCXwc="
+      },
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - Daum",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAIlWKtCwdjRh4Gk2ZDg69MD-Mgas39hYNH3NLzPmx1zU6Ab1Ct7Odeu_kswvr80NKgAl0-qeZ0L70jh8kBWRhBJZEcPtWRs178p-eDNPqp_NvPwmbS_EongCwJqdQ=="
+      },
+      {
+        "source_title": "도시농업 참여 - 공유농업 아이디어 모음",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAL6BU3K63O_jZaaBx8rb56p9aV6CVZfxXNy12DkrabLjif_Fv4TsP8jxbOXZbllxSM2yy2c3hBCMMuCMqw8R_SyDAw7W8IPUoB8K_4SJdocgoQ4aa63EggaUdoGkdfha94TtE0HHrNX56cjvtVPesJ0PZWq5slpgjQ3MPGQOaPZ_hzrc_C_jgYBfH565ddsLGz6gdH"
+      }
+    ]
+  },
+  {
+    "index": 21,
+    "results": [
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - 아시아경제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKOCiU-P4ajKCi96u1HIOATAT_C2jySs-ddZQmmtT4UhufTUMm-LztD9KbOWDU73DGr27KodFk8UnhAtX1ah5-8nGQgsk8_misJyGGjv0ExS_uHt49QgC6g4KKrxJa27H8Ie-661NcCXwc="
+      },
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - Daum",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAIlWKtCwdjRh4Gk2ZDg69MD-Mgas39hYNH3NLzPmx1zU6Ab1Ct7Odeu_kswvr80NKgAl0-qeZ0L70jh8kBWRhBJZEcPtWRs178p-eDNPqp_NvPwmbS_EongCwJqdQ=="
+      },
+      {
+        "source_title": "[환경칼럼] 지속가능발전을 위한 생태도시와 탄소중립 - 시사의창",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALkA80wRA7G6hyGujsQ2kQyyP6WIi05YFMUL8A9dRNIwbomaWJ7NXV1yGQNzmtqwUP8inzd1HFp2WcVym3Gsw5OWIMpr70bmq6o5dDcaaQZWYLr3w1OUDtTdFU3_S1C_-g="
+      },
+      {
+        "source_title": "광주광역시 도시농업 활성화 방안 마련",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALiVTbOYiTRh4xQHqUoXJBw2mKNjs9I-Ey35MTwHbkaalKKLrH2FXKvcbdOWFj3a_imWH-Ya_DbV3G9CKF9opN6olOKvkXVVXxlE595O8AdBLIJJSPSBbXreZh9bjDpY0mP8U1SfrngeIcTF6DzK7ZRcpf6i5Jb6c5AceJ7zImidjDr8A=="
+      },
+      {
+        "source_title": "[녹색시선] 가로수, 도시 생물다양성의 녹색혈관 - 라펜트",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAL4RHRqtnI2D9Jv05bgx97ZQ3eRlAimtCdNA4yqlwLKXtxaLxV3anV-ri0Wi6SilAt09pt0m-QDfcZswtQeEpFycb9ZM_cmqKXRT5aEHQWwoICUIAsM55CwsOqadAwfrrbfDWHxyDzpcSROlx5Wetqj"
+      }
+    ]
+  },
+  {
+    "index": 22,
+    "results": [
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - 아시아경제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKOCiU-P4ajKCi96u1HIOATAT_C2jySs-ddZQmmtT4UhufTUMm-LztD9KbOWDU73DGr27KodFk8UnhAtX1ah5-8nGQgsk8_misJyGGjv0ExS_uHt49QgC6g4KKrxJa27H8Ie-661NcCXwc="
+      },
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - Daum",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAIlWKtCwdjRh4Gk2ZDg69MD-Mgas39hYNH3NLzPmx1zU6Ab1Ct7Odeu_kswvr80NKgAl0-qeZ0L70jh8kBWRhBJZEcPtWRs178p-eDNPqp_NvPwmbS_EongCwJqdQ=="
+      },
+      {
+        "source_title": "'도시에서 귀농합니다!' - 서울시를 중심으로 한 국내 도시농업의 흐름과 전망 - 이로운넷",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALcKeotDGMm62Sw4ETB_DMyCg5fVuni2v0qSp8UvZbvkvDUiEKGPnhxtdj7J00YQKrEHfyWG8A6KIopHCWB6kaDZ0ZHXGlQAgK7wNyC0LzzYHYqSK-SVgrrWzQ2tW_cDUDPY6icSJjbq-Pw-GU="
+      },
+      {
+        "source_title": "도시농업의 비전과 과제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAJe96GZChIfSxxLUADvVSiTpbyAZbYP_O5CykqoleBdvx1xOpO50iCIZdNC_GCzT2HsMHtctekXY-wEsFqyXllUTRQbywCIy67msOi0MUqMVeMuJwuZpaeFpyhWEWcmSguCIRvoAkAWdTxWVD0H-YKvKtxEwwXNmpnBS97K_ozqmYMGfLqeAqK-6SXfHwZVVCRAeQhGzBQ-cNbTTZ-20WXTPWN0l7FOvkoGGQ4C5_K8DkUHduJKikDm4NMl64n_65-zQr9_A-G3HPSYkBfC82U1bCXXSw=="
+      }
+    ]
+  },
+  {
+    "index": 23,
+    "results": [
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - 아시아경제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKOCiU-P4ajKCi96u1HIOATAT_C2jySs-ddZQmmtT4UhufTUMm-LztD9KbOWDU73DGr27KodFk8UnhAtX1ah5-8nGQgsk8_misJyGGjv0ExS_uHt49QgC6g4KKrxJa27H8Ie-661NcCXwc="
+      },
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - Daum",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAIlWKtCwdjRh4Gk2ZDg69MD-Mgas39hYNH3NLzPmx1zU6Ab1Ct7Odeu_kswvr80NKgAl0-qeZ0L70jh8kBWRhBJZEcPtWRs178p-eDNPqp_NvPwmbS_EongCwJqdQ=="
+      },
+      {
+        "source_title": "도시농업의 비전과 과제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAJe96GZChIfSxxLUADvVSiTpbyAZbYP_O5CykqoleBdvx1xOpO50iCIZdNC_GCzT2HsMHtctekXY-wEsFqyXllUTRQbywCIy67msOi0MUqMVeMuJwuZpaeFpyhWEWcmSguCIRvoAkAWdTxWVD0H-YKvKtxEwwXNmpnBS97K_ozqmYMGfLqeAqK-6SXfHwZVVCRAeQhGzBQ-cNbTTZ-20WXTPWN0l7FOvkoGGQ4C5_K8DkUHduJKikDm4NMl64n_65-zQr9_A-G3HPSYkBfC82U1bCXXSw=="
+      }
+    ]
+  },
+  {
+    "index": 24,
+    "results": [
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - 아시아경제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKOCiU-P4ajKCi96u1HIOATAT_C2jySs-ddZQmmtT4UhufTUMm-LztD9KbOWDU73DGr27KodFk8UnhAtX1ah5-8nGQgsk8_misJyGGjv0ExS_uHt49QgC6g4KKrxJa27H8Ie-661NcCXwc="
+      },
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - Daum",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAIlWKtCwdjRh4Gk2ZDg69MD-Mgas39hYNH3NLzPmx1zU6Ab1Ct7Odeu_kswvr80NKgAl0-qeZ0L70jh8kBWRhBJZEcPtWRs178p-eDNPqp_NvPwmbS_EongCwJqdQ=="
+      },
+      {
+        "source_title": "도시농업에 대한 시민인식 조사 결과 보고서 - 서울농부포털",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALC52OoOjzqH-fak_0-QiedV0ftUlR8JCUfF-mOct78ektyhyloYBu-I10WFxf_O9egdrZq1ewS_eaDnjNHos2TnidGVxdfM290IRdCWRaJSlSTdLjmKRtM44jDQUZi215sMlgo9G0k1qjquQ7Eba4eG-D8gCCIiQveeGedZmA="
+      },
+      {
+        "source_title": "지속 가능한 탄소 배출 제로 '스마트팜', 지방에서 도시까지 농업 범위 확산한다 - 피플투데이",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALgVeK5_t0F-UV91Hqs7qk2Dk1idSmG3xQdgIAP4QE476mmD8YSKur1OWz5rjMsCGF3kMuMTtBFqQ2tK3RuqaC18jxsmYdMdn7kBPgCPDKRfNkBdcCCUblIfwm6DfNI5dETBhxkbZdaXdw53Su0ipWqg_Nq"
+      }
+    ]
+  },
+  {
+    "index": 26,
+    "results": [
+      {
+        "source_title": "[환경칼럼] 김훈동 인천YMCA 회장 - 경인경제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKlTDSDKUpQIJBuUbcqe6qRBmjtNdcHaCSjGi_WxrqotlMLstI51VdVccbU61O1TLIUwvMRsdxBbQaq386Na7CXooGWkjIZrCWnn75L_wbJgKRww0X7UWnjh03vxZM8OUY-nvFlYQHRWGGP_CTIaww"
+      },
+      {
+        "source_title": "라이프 리폼, 도심에 '그린'을 심다 : 네이버 블로그",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAJSrcfiIGmjTKkO6HQASuRxJQmqQ0ZhvdrW2c2tBXd9-REB2km5DT_4pqtEcg32OQa0mM3g49Ow2ChCHv6XdiLgr7ZiKnCM7p4gNe5NeEIPCa1z4uO8T-UL1CY6GQi_0ua5iw=="
+      }
+    ]
+  },
+  {
+    "index": 27,
+    "results": [
+      {
+        "source_title": "도시농업의 비전과 과제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAJe96GZChIfSxxLUADvVSiTpbyAZbYP_O5CykqoleBdvx1xOpO50iCIZdNC_GCzT2HsMHtctekXY-wEsFqyXllUTRQbywCIy67msOi0MUqMVeMuJwuZpaeFpyhWEWcmSguCIRvoAkAWdTxWVD0H-YKvKtxEwwXNmpnBS97K_ozqmYMGfLqeAqK-6SXfHwZVVCRAeQhGzBQ-cNbTTZ-20WXTPWN0l7FOvkoGGQ4C5_K8DkUHduJKikDm4NMl64n_65-zQr9_A-G3HPSYkBfC82U1bCXXSw=="
+      },
+      {
+        "source_title": "전문가들이 보는 2050 농업·농촌의 미래 - KREI Repository",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAK661H23m2TKAZxjC8cOBJ2PN730XBk733lXiR8JH7kfYu_NJqj3QI_PrbsIPEL3wqvmZ2uLgXbQHZng28NSk5gKiawFqEoZLRXejHHTM_3fgQmwoYnTX_EdN9-yJ2J5apLqwCeXRP4Be59wLBdGs0LJ8jobBp8gyprC5EH8qL3m_7vKi4ImrG5hMtyX97ipFx4d6lAEyQJnddUZ7z5gSotrlcPvzeKFiyYHUfCP8rAv2BdhXY9IwWxczfM0y4CZ1iCIMIzQ5Y4t-w2TDA4uWZV-UjDMkNrFOVUlTqW6g=="
+      }
+    ]
+  }
+][
+  {
+    "index": 3,
+    "results": [
+      {
+        "source_title": "[활동] 흙을 만지며, 도시의 생명을 불어넣는 '도시농업의 날' : 환경정의",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKu-By5mTkg_B8P4dcb9FW_WjRFKMoaenGCqgnBGwdmVd1MV7qvZJeqlPxfTccQkgDakfEDaXrEGkoMjLEKZAzCOXf7S8vdPe0wB8YS7xTj3YwzMXxa8zkWidmmZwsOFvemqFEqojXFF3kiXpc="
+      },
+      {
+        "source_title": "도시농업의 날을 아시나요? - 카드/한컷 | 멀티미디어 | 대한민국 정책브리핑",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAJ2w-03thYlt-H8i-RG3H7PomS65Z-9_l8hRDWN684OY57cnShfFgFSKcYof_qipLsse_Wn4L_c51UyAQbsQKpWvxHHdz2egzkbVPQSgPRV2RH4AO4tTwq6E4QHnU-0b8YHfEBxMY0K4JmWGqrPnjtjImXS69WuGqe3g-UsspOWGmphDhcNLFM="
+      },
+      {
+        "source_title": "[기고] 도시농업과 도농상생 - 영남일보",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAI5rpTlcnUKnz7n_9a_PWbrmPdvJTYUfF8aLhlL5KYqp8SMNNIDdwyo6qQO5WTxlJCifwbYbTKNBRxJBfUtVmsD6PGkWcGnnjF-Qs_XbMztgjGxxXJLt_ekUnulj6MjMZCErPUcjqXyXifSPlq2OPGr1g=="
+      },
+      {
+        "source_title": "순천시, 제3회 도시농업의 날 … '도시농부 어울림 한마당' 성료 - 전국매일신문",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKAVJrT4KPhaGu_IX9YVafzi-s_hR9_q6yMRaRxuQucc6liBAQImkgDgawJBkllI5RF309FwPdbHPrI6bLQjHz9r2Z-k0ZYKzYVpKNpLjYIZk_3dVBt_ZVU0hgQB_7Zf8l1Sxd_Qm1nDrUVC_N-ZlTTyBt8"
+      },
+      {
+        "source_title": "경기도, 시흥에서 '제2회 경기도 도시농업의 날' 행사 개최 - 국민기자뉴스",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKSc_WJpUbHsL5kg9w_VpoV7hl6mqXrZZXO8wvLtvaoFFrrho77mvqvfb5onIZA8bSi96xSKBZAVUve4nVHKJuTR5RRwguNy0ev8o4wZPRdpiVl4cu5kTkCBHgnt7_iIo5FB6XNDrLr7-X"
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "results": [
+      {
+        "source_title": "도시농업에 대한 시민인식 조사 결과 보고서 - 서울농부포털",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALC52OoOjzqH-fak_0-QiedV0ftUlR8JCUfF-mOct78ektyhyloYBu-I10WFxf_O9egdrZq1ewS_eaDnjNHos2TnidGVxdfM290IRdCWRaJSlSTdLjmKRtM44jDQUZi215sMlgo9G0k1qjquQ7Eba4eG-D8gCCIiQveeGedZmA="
+      },
+      {
+        "source_title": "수직 농장, 도시에서 찾은 농업의 미래 - 카이스트신문",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAJ2dODGq8kLt7USKQhIBAhWtYm3qCMqvGfj-jlbeoUo4RZ_k7YQq-Qy0WRq6T9lSkyRwldoN0Ltvan-E3GrjxZAlju2k-Guc4Fe5n0PfFYBEG8zXyuN3VP62AjR3nHoBir5MEZ365CXnXtEE9CvNESw"
+      },
+      {
+        "source_title": "미래사회 도시농업의 필요성 - 복원에서 공생으로",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAIA8ESW-PdbPq94OXdb5_cHppGRmp5Ohh7zeeju08rRXqKshzbTVm1XlhRt-sa8f0B7qytsy0bIdbBULvWa3ZuilGI3ytkZNIOZh01JbdE0NZ9_1ymmGFo="
+      },
+      {
+        "source_title": "도시농업의 비전과 과제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAJe96GZChIfSxxLUADvVSiTpbyAZbYP_O5CykqoleBdvx1xOpO50iCIZdNC_GCzT2HsMHtctekXY-wEsFqyXllUTRQbywCIy67msOi0MUqMVeMuJwuZpaeFpyhWEWcmSguCIRvoAkAWdTxWVD0H-YKvKtxEwwXNmpnBS97K_ozqmYMGfLqeAqK-6SXfHwZVVCRAeQhGzBQ-cNbTTZ-20WXTPWN0l7FOvkoGGQ4C5_K8DkUHduJKikDm4NMl64n_65-zQr9_A-G3HPSYkBfC82U1bCXXSw=="
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "results": [
+      {
+        "source_title": "도시농업의 매력과 가치 : 네이버 블로그",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAJyZH4oRGtwIeFO8dW9fpJYWYOIYJ4qeNiykvzZhyOjfeBUuN6dhQtTzX9Cu7hCwsHh9lMSpj8x4oce9Rv9vUQQPUPAaUnXujEaAgeX-8DpqmxuBHayTnQt6bD2RuxMKbcjuvv8Bs_45rfN5ohdFg=="
+      },
+      {
+        "source_title": "도시농업의 날! 도시농장 스마트팜 텃밭 가꾸기 : 네이버 블로그",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAJS8dKuV5x4Gbh1Qa9o3HijsjNhwC5VnwQCL6uhbu8C3uBKj_p2TPt3WScCr7rRagxOMWL-O2Cd2kvPiyv8PTZFdFbXfq7OSCpYWlasBIngAH_Dgxz1CfGrQ6nzJ6xkv9q7"
+      },
+      {
+        "source_title": "[의정언박싱] 방성환 도의원 \"도시와 농촌 마중물 역할 위해 도시농업 활성화돼야\" - 경인방송",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALZRoPv-yQj9dibfKtNbV90YyCVc3V_-5YMdbab8vAxlNQ_az7iUrJGqzuTDOviqvAbGogJp_R6id1FrrRUUnfk4OEJR_W0d7E2GnmA8NczBiV9W7t5dbZhZvYX7jil7S0-KtzCSz_A9dLTEsw="
+      },
+      {
+        "source_title": "지역단위 도시농업 활성화 방안과 실천과제 - Jthink Repository",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAIRroM4g7nVJqujYbYcqX2gSfvYfQoCgUdXp66hLAJiNnM9Fp0sT3Ga5VhJURWdOXinrvGkI0DSh-YBPf85hHW4VxZY2pDhwHUfOa5_1FX--_MODmBWjWUKY-Rv0cYdNKqAItnk8VTxSA3X8QF_Hv08689qRkfaC_vWNwmeEgqXfEDJEFqoztStl4XWnb_e9cGKoYUYzI27RW957xK3ZV4ZXFw="
+      },
+      {
+        "source_title": "도시농업 참여 - 공유농업 아이디어 모음",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAL6BU3K63O_jZaaBx8rb56p9aV6CVZfxXNy12DkrabLjif_Fv4TsP8jxbOXZbllxSM2yy2c3hBCMMuCMqw8R_SyDAw7W8IPUoB8K_4SJdocgoQ4aa63EggaUdoGkdfha94TtE0HHrNX56cjvtRVPesJ0PZWq5slpgjQ3MPGQOaPZ_hzrc_C_jgYBfH565ddsLGz6gdH"
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "results": [
+      {
+        "source_title": "미래사회 도시농업의 필요성 - 복원에서 공생으로",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAIA8ESW-PdbPq94OXdb5_cHppGRmp5Ohh7zeeju08rRXqKshzbTVm1XlhRt-sa8f0B7qytsy0bIdbBULvWa3ZuilGI3ytkZNIOZh01JbdE0NZ9_1ymmGFo="
+      },
+      {
+        "source_title": "[치유농업사 김동영의 힐링노트] 2025-9회 - 원예닷컴",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAK94PUyYcdA1T23EVKWOQy_MXEb4c98LNbS2Tq0fPNGbggM26RSltwXUVD-zQLISGGecbs7Ryt5nrpRMyUMmAk3_Q8sYU-_k5lofFfZESTFaYMcyu_uzBewtMjOVdq2a9FYBBt4sbVlUOcMFxri9A==몸과"
+      },
+      {
+        "source_title": "도시 생활 농업이 가져오는 심리적 안정과 교육적 효과 - Goover",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALF1mPHt-5oyi2Hp6lEh7ygvCkgPnA-d5lcugsR5TH6hHIYMQJ8BLDhkzMgvRCb6ofXXP0PJJwd1ICRLl-ODn29xD8mJQ8ztUTt7ilHmeSUV9VEU3inpzdpYcoMWfu3UKlANJsXAcuY5a4z_DEKT0xW7STrppxME8O6lmoin0_pgWDeh14Caks0Z0c6WYboF35QgCZyx4UAGU3u1g=="
+      },
+      {
+        "source_title": "원예치료란? - 농사로",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKyR5i5A4kv-tNZ-9wy0XT549AudvobxFIArGI18w7OoV1f6tR6iUA0sE4O5XO3Xw32ZzwFTVt73Ss6MDsPmGGoEZm4TjJNKx23qVZKtjNJHUQq1qRshk-OVRbIYpDTHHzk90hsizDzm_ZFnQsO-J7j-KsyWUjzp3sXUKQPXCOD8jA=="
+      },
+      {
+        "source_title": "실내식물로 치유·가습·미세먼지 한번에 해결 - 연합뉴스TV",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKdilLaiJyJ4L6gAafWsmzASLlCqQShZri9eeFbvIVW8lKqlJGIseVxwZB4FdDBGAffrpWarGSE3p1PqnInjPB7rkus1aNDi3AiXqbxwNe9bLvzRMhSlCXjTfWGXMiVAh4bVAWwhlxzjq8IB88="
+      }
+    ]
+  },
+  {
+    "index": 11,
+    "results": [
+      {
+        "source_title": "도시농업에 대한 시민인식 조사 결과 보고서 - 서울농부포털",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALC52OoOjzqH-fak_0-QiedV0ftUlR8JCUfF-mOct78ektyhyloYBu-I10WFxf_O9egdrZq1ewS_eaDnjNHos2TnidGVxdfM290IRdCWRaJSlSTdLjmKRtM44jDQUZi215sMlgo9G0k1qjquQ7Eba4eG-D8gCCIiQveeGedZmA="
+      },
+      {
+        "source_title": "수직 농장, 도시에서 찾은 농업의 미래 - 카이스트신문",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAJ2dODGq8kLt7USKQhIBAhWtYm3qCMqvGfj-jlbeoUo4RZ_k7YQq-Qy0WRq6T9lSkyRwldoN0Ltvan-E3GrjxZAlju2k-Guc4Fe5n0PfFYBEG8zXyuN3VP62AjR3nHoBir5MEZ365CXnXtEE9CvNESw"
+      },
+      {
+        "source_title": "미래사회 도시농업의 필요성 - 복원에서 공생으로",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAIA8ESW-PdbPq94OXdb5_cHppGRmp5Ohh7zeeju08rRXqKshzbTVm1XlhRt-sa8f0B7qytsy0bIdbBULvWa3ZuilGI3ytkZNIOZh01JbdE0NZ9_1ymmGFo="
+      },
+      {
+        "source_title": "도시농업의 다원적 가치 공유하자 - 농촌여성신문",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALjoO-r5brioYbSPh0-VqPPKQixzDGTtQetQeEk15lWpu4nB10X_1RZBZvEKZeDALkI2HegSQdpLNTTk4nJSTueyAN3fp5_pOV8NVoen2gtLN0qnZq_Wu7y_meH1ZCpj5jV7nHz9y7OMgGdBuW8"
+      },
+      {
+        "source_title": "도시농업 참여 - 공유농업 아이디어 모음",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAL6BU3K63O_jZaaBx8rb56p9aV6CVZfxXNy12DkrabLjif_Fv4TsP8jxbOXZbllxSM2yy2c3hBCMMuCMqw8R_SyDAw7W8IPUoB8K_4SJdocgoQ4aa63EggaUdoGkdfha94TtE0HHrNX56cjvtVPesJ0PZWq5slpgjQ3MPGQOaPZ_hzrc_C_jgYBfH565ddsLGz6gdH"
+      },
+      {
+        "source_title": "원예치료란? - 농사로",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKyR5i5A4kv-tNZ-9wy0XT549AudvobxFIArGI18w7OoV1f6tR6iUA0sE4O5XO3Xw32ZzwFTVt73Ss6MDsPmGGoEZm4TjJNKx23qVZKtjNJHUQq1qRshk-OVRbIYpDTHHzk90hsizDzm_ZFnQsO-J7j-KsyWUjzp3sXUKQPXCOD8jA=="
+      },
+      {
+        "source_title": "많은 이점을 가져오기 위한 도시 농업 확장 - Securities.io",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALN21xNd_eiroWXLpUBSn-6dExU5Nk6h0Yry4oQwxRUHMJvEab5jLStz_cNa7mKlOgYKsZE2VhQmftEc4U-6kipr972ndZ3cFBHhQMJaBPjvYL7Ciuv1i0qy6P9A6T1qyAqbVVuLN_K1Pd9fBgSo5zXLEtoBet8kDcZs9pKtP7fHFH3olQ=="
+      }
+    ]
+  },
+  {
+    "index": 15,
+    "results": [
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - 아시아경제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKOCiU-P4ajKCi96u1HIOATAT_C2jySs-ddZQmmtT4UhufTUMm-LztD9KbOWDU73DGr27KodFk8UnhAtX1ah5-8nGQgsk8_misJyGGjv0ExS_uHt49QgC6g4KKrxJa27H8Ie-661NcCXwc="
+      },
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - Daum",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAIlWKtCwdjRh4Gk2ZDg69MD-Mgas39hYNH3NLzPmx1zU6Ab1Ct7Odeu_kswvr80NKgAl0-qeZ0L70jh8kBWRhBJZEcPtWRs178p-eDNPqp_NvPwmbS_EongCwJqdQ=="
+      },
+      {
+        "source_title": "도시농업의 비전과 과제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAJe96GZChIfSxxLUADvVSiTpbyAZbYP_O5CykqoleBdvx1xOpO50iCIZdNC_GCzT2HsMHtctekXY-wEsFqyXllUTRQbywCIy67msOi0MUqMVeMuJwuZpaeFpyhWEWcmSguCIRvoAkAWdTxWVD0H-YKvKtxEwwXNmpnBS97K_ozqmYMGfLqeAqK-6SXfHwZVVCRAeQhGzBQ-cNbTTZ-20WXTPWN0l7FOvkoGGQ4C5_K8DkUHduJKikDm4NMl64n_65-zQr9_A-G3HPSYkBfC82U1bCXXSw=="
+      }
+    ]
+  },
+  {
+    "index": 16,
+    "results": [
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - 아시아경제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKOCiU-P4ajKCi96u1HIOATAT_C2jySs-ddZQmmtT4UhufTUMm-LztD9KbOWDU73DGr27KodFk8UnhAtX1ah5-8nGQgsk8_misJyGGjv0ExS_uHt49QgC6g4KKrxJa27H8Ie-661NcCXwc="
+      },
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - Daum",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAIlWKtCwdjRh4Gk2ZDg69MD-Mgas39hYNH3NLzPmx1zU6Ab1Ct7Odeu_kswvr80NKgAl0-qeZ0L70jh8kBWRhBJZEcPtWRs178p-eDNPqp_NvPwmbS_EongCwJqdQ=="
+      },
+      {
+        "source_title": "지속 가능한 탄소 배출 제로 '스마트팜', 지방에서 도시까지 농업 범위 확산한다 - 피플투데이",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALgVeK5_t0F-UV91Hqs7qk2Dk1idSmG3xQdgIAP4QE476mmD8YSKur1OWz5rjMsCGF3kMuMTtBFqQ2tK3RuqaC18jxsmYdMdn7kBPgCPDKRfNkBdcCCUblIfwm6DfNI5dETBhxkbZdaXdw53Su0ipWqg_Nq"
+      }
+    ]
+  },
+  {
+    "index": 20,
+    "results": [
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - 아시아경제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKOCiU-P4ajKCi96u1HIOATAT_C2jySs-ddZQmmtT4UhufTUMm-LztD9KbOWDU73DGr27KodFk8UnhAtX1ah5-8nGQgsk8_misJyGGjv0ExS_uHt49QgC6g4KKrxJa27H8Ie-661NcCXwc="
+      },
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - Daum",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAIlWKtCwdjRh4Gk2ZDg69MD-Mgas39hYNH3NLzPmx1zU6Ab1Ct7Odeu_kswvr80NKgAl0-qeZ0L70jh8kBWRhBJZEcPtWRs178p-eDNPqp_NvPwmbS_EongCwJqdQ=="
+      },
+      {
+        "source_title": "도시농업 참여 - 공유농업 아이디어 모음",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAL6BU3K63O_jZaaBx8rb56p9aV6CVZfxXNy12DkrabLjif_Fv4TsP8jxbOXZbllxSM2yy2c3hBCMMuCMqw8R_SyDAw7W8IPUoB8K_4SJdocgoQ4aa63EggaUdoGkdfha94TtE0HHrNX56cjvtVPesJ0PZWq5slpgjQ3MPGQOaPZ_hzrc_C_jgYBfH565ddsLGz6gdH"
+      }
+    ]
+  },
+  {
+    "index": 21,
+    "results": [
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - 아시아경제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKOCiU-P4ajKCi96u1HIOATAT_C2jySs-ddZQmmtT4UhufTUMm-LztD9KbOWDU73DGr27KodFk8UnhAtX1ah5-8nGQgsk8_misJyGGjv0ExS_uHt49QgC6g4KKrxJa27H8Ie-661NcCXwc="
+      },
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - Daum",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAIlWKtCwdjRh4Gk2ZDg69MD-Mgas39hYNH3NLzPmx1zU6Ab1Ct7Odeu_kswvr80NKgAl0-qeZ0L70jh8kBWRhBJZEcPtWRs178p-eDNPqp_NvPwmbS_EongCwJqdQ=="
+      },
+      {
+        "source_title": "[환경칼럼] 지속가능발전을 위한 생태도시와 탄소중립 - 시사의창",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALkA80wRA7G6hyGujsQ2kQyyP6WIi05YFMUL8A9dRNIwbomaWJ7NXV1yGQNzmtqwUP8inzd1HFp2WcVym3Gsw5OWIMpr70bmq6o5dDcaaQZWYLr3w1OUDtTdFU3_S1C_-g="
+      },
+      {
+        "source_title": "광주광역시 도시농업 활성화 방안 마련",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALiVTbOYiTRh4xQHqUoXJBw2mKNjs9I-Ey35MTwHbkaalKKLrH2FXKvcbdOWFj3a_imWH-Ya_DbV3G9CKF9opN6olOKvkXVVXxlE595O8AdBLIJJSPSBbXreZh9bjDpY0mP8U1SfrngeIcTF6DzK7ZRcpf6i5Jb6c5AceJ7zImidjDr8A=="
+      },
+      {
+        "source_title": "[녹색시선] 가로수, 도시 생물다양성의 녹색혈관 - 라펜트",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAL4RHRqtnI2D9Jv05bgx97ZQ3eRlAimtCdNA4yqlwLKXtxaLxV3anV-ri0Wi6SilAt09pt0m-QDfcZswtQeEpFycb9ZM_cmqKXRT5aEHQWwoICUIAsM55CwsOqadAwfrrbfDWHxyDzpcSROlx5Wetqj"
+      }
+    ]
+  },
+  {
+    "index": 22,
+    "results": [
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - 아시아경제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKOCiU-P4ajKCi96u1HIOATAT_C2jySs-ddZQmmtT4UhufTUMm-LztD9KbOWDU73DGr27KodFk8UnhAtX1ah5-8nGQgsk8_misJyGGjv0ExS_uHt49QgC6g4KKrxJa27H8Ie-661NcCXwc="
+      },
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - Daum",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAIlWKtCwdjRh4Gk2ZDg69MD-Mgas39hYNH3NLzPmx1zU6Ab1Ct7Odeu_kswvr80NKgAl0-qeZ0L70jh8kBWRhBJZEcPtWRs178p-eDNPqp_NvPwmbS_EongCwJqdQ=="
+      },
+      {
+        "source_title": "'도시에서 귀농합니다!' - 서울시를 중심으로 한 국내 도시농업의 흐름과 전망 - 이로운넷",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALcKeotDGMm62Sw4ETB_DMyCg5fVuni2v0qSp8UvZbvkvDUiEKGPnhxtdj7J00YQKrEHfyWG8A6KIopHCWB6kaDZ0ZHXGlQAgK7wNyC0LzzYHYqSK-SVgrrWzQ2tW_cDUDPY6icSJjbq-Pw-GU="
+      },
+      {
+        "source_title": "도시농업의 비전과 과제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAJe96GZChIfSxxLUADvVSiTpbyAZbYP_O5CykqoleBdvx1xOpO50iCIZdNC_GCzT2HsMHtctekXY-wEsFqyXllUTRQbywCIy67msOi0MUqMVeMuJwuZpaeFpyhWEWcmSguCIRvoAkAWdTxWVD0H-YKvKtxEwwXNmpnBS97K_ozqmYMGfLqeAqK-6SXfHwZVVCRAeQhGzBQ-cNbTTZ-20WXTPWN0l7FOvkoGGQ4C5_K8DkUHduJKikDm4NMl64n_65-zQr9_A-G3HPSYkBfC82U1bCXXSw=="
+      }
+    ]
+  },
+  {
+    "index": 23,
+    "results": [
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - 아시아경제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKOCiU-P4ajKCi96u1HIOATAT_C2jySs-ddZQmmtT4UhufTUMm-LztD9KbOWDU73DGr27KodFk8UnhAtX1ah5-8nGQgsk8_misJyGGjv0ExS_uHt49QgC6g4KKrxJa27H8Ie-661NcCXwc="
+      },
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - Daum",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAIlWKtCwdjRh4Gk2ZDg69MD-Mgas39hYNH3NLzPmx1zU6Ab1Ct7Odeu_kswvr80NKgAl0-qeZ0L70jh8kBWRhBJZEcPtWRs178p-eDNPqp_NvPwmbS_EongCwJqdQ=="
+      },
+      {
+        "source_title": "도시농업의 비전과 과제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAJe96GZChIfSxxLUADvVSiTpbyAZbYP_O5CykqoleBdvx1xOpO50iCIZdNC_GCzT2HsMHtctekXY-wEsFqyXllUTRQbywCIy67msOi0MUqMVeMuJwuZpaeFpyhWEWcmSguCIRvoAkAWdTxWVD0H-YKvKtxEwwXNmpnBS97K_ozqmYMGfLqeAqK-6SXfHwZVVCRAeQhGzBQ-cNbTTZ-20WXTPWN0l7FOvkoGGQ4C5_K8DkUHduJKikDm4NMl64n_65-zQr9_A-G3HPSYkBfC82U1bCXXSw=="
+      }
+    ]
+  },
+  {
+    "index": 24,
+    "results": [
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - 아시아경제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKOCiU-P4ajKCi96u1HIOATAT_C2jySs-ddZQmmtT4UhufTUMm-LztD9KbOWDU73DGr27KodFk8UnhAtX1ah5-8nGQgsk8_misJyGGjv0ExS_uHt49QgC6g4KKrxJa27H8Ie-661NcCXwc="
+      },
+      {
+        "source_title": "[발언대]도시의 내일을 심는 도시농업 - Daum",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAIlWKtCwdjRh4Gk2ZDg69MD-Mgas39hYNH3NLzPmx1zU6Ab1Ct7Odeu_kswvr80NKgAl0-qeZ0L70jh8kBWRhBJZEcPtWRs178p-eDNPqp_NvPwmbS_EongCwJqdQ=="
+      },
+      {
+        "source_title": "도시농업에 대한 시민인식 조사 결과 보고서 - 서울농부포털",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALC52OoOjzqH-fak_0-QiedV0ftUlR8JCUfF-mOct78ektyhyloYBu-I10WFxf_O9egdrZq1ewS_eaDnjNHos2TnidGVxdfM290IRdCWRaJSlSTdLjmKRtM44jDQUZi215sMlgo9G0k1qjquQ7Eba4eG-D8gCCIiQveeGedZmA="
+      },
+      {
+        "source_title": "지속 가능한 탄소 배출 제로 '스마트팜', 지방에서 도시까지 농업 범위 확산한다 - 피플투데이",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqALgVeK5_t0F-UV91Hqs7qk2Dk1idSmG3xQdgIAP4QE476mmD8YSKur1OWz5rjMsCGF3kMuMTtBFqQ2tK3RuqaC18jxsmYdMdn7kBPgCPDKRfNkBdcCCUblIfwm6DfNI5dETBhxkbZdaXdw53Su0ipWqg_Nq"
+      }
+    ]
+  },
+  {
+    "index": 26,
+    "results": [
+      {
+        "source_title": "[환경칼럼] 김훈동 인천YMCA 회장 - 경인경제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAKlTDSDKUpQIJBuUbcqe6qRBmjtNdcHaCSjGi_WxrqotlMLstI51VdVccbU61O1TLIUwvMRsdxBbQaq386Na7CXooGWkjIZrCWnn75L_wbJgKRww0X7UWnjh03vxZM8OUY-nvFlYQHRWGGP_CTIaww"
+      },
+      {
+        "source_title": "라이프 리폼, 도심에 '그린'을 심다 : 네이버 블로그",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAJSrcfiIGmjTKkO6HQASuRxJQmqQ0ZhvdrW2c2tBXd9-REB2km5DT_4pqtEcg32OQa0mM3g49Ow2ChCHv6XdiLgr7ZiKnCM7p4gNe5NeEIPCa1z4uO8T-UL1CY6GQi_0ua5iw=="
+      }
+    ]
+  },
+  {
+    "index": 27,
+    "results": [
+      {
+        "source_title": "도시농업의 비전과 과제",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAJe96GZChIfSxxLUADvVSiTpbyAZbYP_O5CykqoleBdvx1xOpO50iCIZdNC_GCzT2HsMHtctekXY-wEsFqyXllUTRQbywCIy67msOi0MUqMVeMuJwuZpaeFpyhWEWcmSguCIRvoAkAWdTxWVD0H-YKvKtxEwwXNmpnBS97K_ozqmYMGfLqeAqK-6SXfHwZVVCRAeQhGzBQ-cNbTTZ-20WXTPWN0l7FOvkoGGQ4C5_K8DkUHduJKikDm4NMl64n_65-zQr9_A-G3HPSYkBfC82U1bCXXSw=="
+      },
+      {
+        "source_title": "전문가들이 보는 2050 농업·농촌의 미래 - KREI Repository",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AWQVqAK661H23m2TKAZxjC8cOBJ2PN730XBk733lXiR8JH7kfYu_NJqj3QI_PrbsIPEL3wqvmZ2uLgXbQHZng28NSk5gKiawFqEoZLRXejHHTM_3fgQmwoYnTX_EdN9-yJ2J5apLqwCeXRP4Be59wLBdGs0LJ8jobBp8gyprC5EH8qL3m_7vKi4ImrG5hMtyX97ipFx4d6lAEyQJnddUZ7z5gSotrlcPvzeKFiyYHUfCP8rAv2BdhXY9IwWxczfM0y4CZ1iCIMIzQ5Y4t-w2TDA4uWZV-UjDMkNrFOVUlTqW6g=="
+      }
+    ]
+  }
+]

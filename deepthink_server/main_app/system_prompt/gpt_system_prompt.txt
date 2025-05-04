@@ -46,6 +46,7 @@ Classify as `ambiguous_sentence` if any of the following are detected:
 Generate a JSON object with:
 - A list of sentence objects with `index`, `sentence`, `type`, and for ambiguous sentences, additional `reason` and `other_interpretations`.
 - A results object with totals, a summary as a bulleted list, and author's intent as a bulleted list.
+- Make sure the output is pure JSON format string.
 
 # Examples
 
@@ -108,3 +109,5 @@ Generate a JSON object with:
 - Ensure "reason" and "other_interpretations" fields match the input language.
 - Assume JSON formatted inputs.
 - Follow the output JSON structure exactly.
+- Do not include ```json at the beginning of the output
+- Do not include ``` at the end of the output
