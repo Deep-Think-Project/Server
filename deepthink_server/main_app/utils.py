@@ -170,38 +170,38 @@ def call_gpt_api(json_output):
         system_prompt = file.read()
 
     response = client.responses.create(
-    model="gpt-4o",
-    input=[
-        {
-        "role": "system",
-        "content": [
+        model="gpt-4o",
+        input=[
             {
+            "role": "system",
+            "content": [
+                {
+                    "type": "input_text",
+                    "text": system_prompt,
+                }
+            ]
+            },
+            {
+            "role": "user",
+            "content": [
+                {
                 "type": "input_text",
-                "text": system_prompt,
+                "text": json_output
+                }
+            ]
+            },
+        ],
+        text={
+            "format": {
+            "type": "json_object"
             }
-        ]
         },
-        {
-        "role": "user",
-        "content": [
-            {
-            "type": "input_text",
-            "text": json_output
-            }
-        ]
-        },
-    ],
-    text={
-        "format": {
-        "type": "json_object"
-        }
-    },
-    reasoning={},
-    tools=[],
-    temperature=1,
-    max_output_tokens=8000,
-    top_p=1,
-    store=True
+        reasoning={},
+        tools=[],
+        temperature=1,
+        max_output_tokens=8000,
+        top_p=1,
+        store=True
     )
 
     
@@ -341,7 +341,56 @@ def merge_gpt_sonar(gpt_json: Dict[str, Any], sonar_json: List[Dict[str, Any]]) 
     
     return gpt_json
 
+import base64
+import os
+from google import genai
+from google.genai import types
 
+def call_gemini_api(json_output):
+        client = genai.Client(
+            api_key=os.environ.get("GEMINI_API_KEY"),
+        )
+
+        # read system prompt from file
+        SYSTEM_PROMPT_PATH = os.path.join(settings.BASE_DIR, 'main_app', 'system_prompt', 'gpt_system_prompt.txt')
+        with open(SYSTEM_PROMPT_PATH, "r", encoding="utf-8") as file:
+            system_prompt = file.read()
+            
+        model = "gemini-2.5-flash-preview-04-17"
+        print(f"Type of json_output: {type(json_output)}")
+        # print(f"Value of json_output: {json_output}")
+        contents = [
+            types.Content(
+                role="user",
+                parts=[
+                    types.Part.from_text(text=json_output)
+                ],
+            ),
+        ]
+        generate_content_config = types.GenerateContentConfig(
+            response_mime_type="text/plain",
+            system_instruction=system_prompt  # Corrected structure
+        )
+        try:
+            response = client.models.generate_content(
+                model=model,
+                contents=contents,
+                config=generate_content_config,
+            )
+            generated_text = response.text if response and response.text else ""
+            json_obj = json.dumps(generated_text, ensure_ascii=False, indent=4)
+
+            # 파일에 JSON 형식으로 저장
+            output_path = os.path.join(settings.BASE_DIR, 'output', '3-gemini_output')
+            save_unique_file(output_path, 'gemini_output.json', json_obj) # JSON 문자열 저장
+
+            print("[COMPLETE] GEMINI API")
+            return json_obj  # JSON 문자열 반환
+
+        except Exception as e:
+            error_message = json.dumps({'error': str(e)}, ensure_ascii=False, indent=4)
+            print(f"[ERROR] GEMINI API - {e}")
+            return error_message
 
 import time
 

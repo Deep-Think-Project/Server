@@ -52,16 +52,16 @@ Generate a JSON object with:
 **Example Start**
 
 **Input JSON:**
-```json
+
 {
  "0": "I wake up at 7 AM every day.",
  "1": "She saw the light.",
  "2": "This policy will contribute to economic growth."
 }
-```
+
 
 **Output JSON:**
-```json
+
 {
   "sentences": [
     {
@@ -99,7 +99,7 @@ Generate a JSON object with:
     ]
   }
 }
-```
+
 
 **Example End**
 
