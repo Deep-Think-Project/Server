@@ -50,7 +50,7 @@ def make_final_output(article_html, final_ouput):
         sentence_text = s['sentence'].strip()
         # 각 문장을 span으로 감싸는 태그 생성
         if s['type'] == 'clear_sentence':
-            tag = f'<span class="deepthink-hl deepthink-type-claer" data-reason="{s["reason"]}">{sentence_text}</span>'
+            tag = f'<span class="deepthink-hl deepthink-type-clear" data-reason="{s["reason"]}">{sentence_text}</span>'
         else:
             tag = f'<span class="deepthink-hl deepthink-type-ambiguous" data-reason="{s["reason"]}"'
             if "other_interpretations" in s:
