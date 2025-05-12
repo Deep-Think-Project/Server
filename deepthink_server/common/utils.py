@@ -1,12 +1,13 @@
 from bs4 import BeautifulSoup # pip install beautifulsoup4
 
 import spacy # pip install spacy
+from spacy.language import Language
 import json
 
 from django.conf import settings
 import os
 
-
+@Language.component("custom_sentence_boundary")
 def custom_sentence_boundary(doc):
     """
     따옴표(" 또는 ') 안에 있는 구두점은 문장 경계로 보지 않고,
@@ -41,7 +42,7 @@ def indexing_text(article):
     if "parser" in nlp.pipe_names:
         nlp.disable_pipes("parser")
     # 커스텀 문장 분리기 추가
-    nlp.add_pipe(custom_sentence_boundary, name='custom_sentence_boundary', before='ner')
+    nlp.add_pipe("custom_sentence_boundary", last=True)
 
     # spaCy로 문장 분리
     doc = nlp(article)
@@ -77,7 +78,7 @@ def call_gpt_api(json_output):
     )
     
     # read system prompt from file
-    SYSTEM_PROMPT_PATH = os.path.join(settings.BASE_DIR, 'main_app', 'system_prompt', 'gpt_system_prompt.txt')
+    SYSTEM_PROMPT_PATH = os.path.join(settings.BASE_DIR, 'common', 'system_prompt', 'gpt_system_prompt.txt')
     with open(SYSTEM_PROMPT_PATH, "r", encoding="utf-8") as file:
         system_prompt = file.read()
 
@@ -192,7 +193,7 @@ def extract_ambiguous_sentences(json_data):
 def call_sonar_api(python_dict):
     YOUR_API_KEY = os.getenv("SONAR_API_KEY")
 
-    SYSTEM_PROMPT_PATH = os.path.join(settings.BASE_DIR, 'main_app', 'system_prompt', 'sonar_system_prompt.txt')
+    SYSTEM_PROMPT_PATH = os.path.join(settings.BASE_DIR, 'common', 'system_prompt', 'sonar_system_prompt.txt')
     with open(SYSTEM_PROMPT_PATH, "r", encoding="utf-8") as file:
         system_prompt = file.read()
     
@@ -264,7 +265,7 @@ def call_gemini_api(json_output):
         )
 
         # read system prompt from file
-        SYSTEM_PROMPT_PATH = os.path.join(settings.BASE_DIR, 'main_app', 'system_prompt', 'gpt_system_prompt.txt')
+        SYSTEM_PROMPT_PATH = os.path.join(settings.BASE_DIR, 'common', 'system_prompt', 'gpt_system_prompt.txt')
         with open(SYSTEM_PROMPT_PATH, "r", encoding="utf-8") as file:
             system_prompt = file.read()
             
