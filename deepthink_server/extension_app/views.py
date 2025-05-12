@@ -29,15 +29,14 @@ def extension_view(request):
             """
             
             try:
-                article_html = remove_english_spans(request.data.get('html'))
-                extracted_text = extract_article_content(article_html)
+                article_html = remove_english_spans(request.data.get('html')) # remove english span from html
+                extracted_text = extract_article_content(article_html) # extract article content text from html
                 json_output = indexing_text(extracted_text) # change to JSON format
                 first_gpt_output = call_gpt_api(json_output) # call gpt api
                 output_for_sonar = extract_ambiguous_sentences(first_gpt_output) # extract ambiguous sentences from gpt output
                 sonar_output = call_sonar_api(output_for_sonar) # call sonar api
                 final_output = merge_gpt_sonar(first_gpt_output, sonar_output) # merge gpt and sonar output
-                result = make_final_output(article_html, final_output)
-                print(result)
+                result = make_final_output(article_html, final_output) # change to HTML format
                 
             except Exception as e:
                 return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
