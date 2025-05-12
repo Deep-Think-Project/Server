@@ -2,7 +2,8 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 
-from .utils import input_type_check, indexing_text, new_extract_text, call_gpt_api, extract_ambiguous_sentences, call_sonar_api, merge_gpt_sonar, timer_thread, call_gemini_api
+from .utils import input_type_check, new_extract_text
+from common.utils import indexing_text, call_gpt_api, extract_ambiguous_sentences, call_sonar_api, merge_gpt_sonar, timer_thread, call_gemini_api
 
 import time
 import threading
@@ -42,7 +43,7 @@ def home_view(request):
                 input_text = extracted_text
 
             try:
-                json_output = indexing_text(input_text, input_type) # change to JSON format
+                json_output = indexing_text(input_text) # change to JSON format
                 first_gpt_output = call_gpt_api(json_output) # call gpt api
                 output_for_sonar = extract_ambiguous_sentences(first_gpt_output) # extract ambiguous sentences from gpt output
                 sonar_output = call_sonar_api(output_for_sonar) # call sonar api
@@ -96,7 +97,7 @@ def gemini_view(request):
                 input_text = extracted_text
 
             try:
-                json_output = indexing_text(input_text, input_type) # change to JSON format
+                json_output = indexing_text(input_text) # change to JSON format
                 llm_output = call_gemini_api(json_output) # call gpt api
                 output_for_sonar = extract_ambiguous_sentences(llm_output) # extract ambiguous sentences from gpt output
                 return Response(output_for_sonar, status=status.HTTP_200_OK)
