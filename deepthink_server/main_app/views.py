@@ -2,7 +2,8 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 
-from .utils import input_type_check, indexing_text, new_extract_text, call_gpt_api, extract_ambiguous_sentences, call_sonar_api, merge_gpt_sonar, timer_thread, call_gemini_api
+from .utils import input_type_check, new_extract_text
+from common.utils import indexing_text, call_gpt_api, extract_ambiguous_sentences, call_sonar_api, merge_gpt_sonar, timer_thread, call_gemini_api
 
 import time
 import threading
