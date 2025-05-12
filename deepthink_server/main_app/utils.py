@@ -85,17 +85,45 @@ def extract_text_with_whitespace(url):
     else:
         raise Exception(f"URL 요청 실패, 상태 코드: {response.status_code}")
     
-def indexing_text(article, input_type):
+def custom_sentence_boundary(doc):
+    """
+    따옴표(" 또는 ') 안에 있는 구두점은 문장 경계로 보지 않고,
+    따옴표 밖에서만 문장 경계(마침표, 느낌표, 물음표)를 적용.
+    """
+    in_double_quote = False
+    in_single_quote = False
+    for i, token in enumerate(doc):
+        # 문장 시작 명시
+        if i == 0:
+            token.is_sent_start = True
+            continue
+
+        # 따옴표 열고 닫힘 상태 확인
+        if token.text == '"':
+            in_double_quote = not in_double_quote
+        if token.text == "'":
+            in_single_quote = not in_single_quote
+
+        # 따옴표 밖에서만 문장 경계 지정
+        if not (in_double_quote or in_single_quote):
+            if token.text in {".", "!", "?"}:
+                # 다음 토큰이 있으면 그 다음이 문장 시작
+                if i + 1 < len(doc):
+                    doc[i+1].is_sent_start = True
+    return doc
+
+def indexing_text(article):
     # 한국어 모델 로드
     nlp = spacy.load("ko_core_news_sm")
+    # 기본 sentence boundary 비활성화 (parser 비활성)
+    if "parser" in nlp.pipe_names:
+        nlp.disable_pipes("parser")
+    # 커스텀 문장 분리기 추가
+    nlp.add_pipe(custom_sentence_boundary, name='custom_sentence_boundary', before='ner')
 
     # spaCy로 문장 분리
     doc = nlp(article)
     sentences = [sent.text.strip() for sent in doc.sents]
-
-    # 문장 수가 5개 이하인지 확인
-    if len(sentences) <= 5 and input_type == "url":
-        raise Exception("문장 수가 5개 이하입니다. 본문 텍스트를 복사하여 붙여넣어 주세요.")
 
     # JSON 포맷으로 변환
     indexed_sentences = {str(i): sentence for i, sentence in enumerate(sentences)}
